@@ -11,5 +11,6 @@ module.exports = {
     'no-console': 'off',
     'no-debugger': 'off',
     'linebreak-style': ['error', 'unix'],
+    'vue/require-default-prop': 'off'
   },
 }

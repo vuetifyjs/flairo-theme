@@ -3,7 +3,9 @@
     id="home"
     class="fill-height text-center"
     tag="section"
-  />
+  >
+    <!--  -->
+  </v-container>
 </template>
 
 <script>
