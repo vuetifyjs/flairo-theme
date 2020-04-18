@@ -15,6 +15,7 @@
       ref="avatar"
       :color="color || 'white'"
       :size="size"
+      :tile="tile"
       :style="avatarStyles"
       class="base-avatar__avatar"
       v-bind="$attrs"
@@ -45,6 +46,7 @@
         type: String,
         default: 'primary',
       },
+      tile: Boolean,
       rounded: Boolean,
       outlined: Boolean,
       outlineColor: String,
@@ -68,7 +70,11 @@
         const margin = this.size / (this.factor * 2)
 
         return {
-          borderRadius: this.rounded ? '25%' : '50%',
+          borderRadius: this.rounded
+            ? '25%'
+            : this.tile
+              ? '0%'
+              : '50%',
           // Aligns the outline content with the content
           opacity: this.outlineColor ? 1 : 0.4,
           margin: `-${margin}px 0 0 -${margin}px`,
@@ -76,7 +82,11 @@
       },
       avatarStyles () {
         return {
-          borderRadius: this.rounded ? '25%' : '50%',
+          borderRadius: this.rounded
+            ? '25%'
+            : this.tile
+              ? '0%'
+              : '50%',
         }
       },
     },
