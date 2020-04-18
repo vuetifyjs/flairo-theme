@@ -1,9 +1,35 @@
 <template>
   <v-container
     id="home"
-    class="fill-height text-center mx-auto"
+    class="fill-height text-center mx-0 px-0"
+    style="max-width: none"
     tag="section"
   >
+    <base-banner
+      heading="Ready to Stand Out?"
+      align="left"
+      body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+    >
+      <base-btn
+        class="text-none font-weight-medium"
+        outlined
+        block
+      >
+        Buy Now
+      </base-btn>
+    </base-banner>
+    <base-banner
+      heading="super flexible"
+      body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+      stacked
+    >
+      <base-btn
+        class="text-none font-weight-medium"
+        rounded
+      >
+        Buy Now
+      </base-btn>
+    </base-banner>
     <!-- Feature Cards -->
     <v-row justify="center">
       <base-feature
