@@ -1,7 +1,7 @@
 <template>
   <v-container
     id="home"
-    class="fill-height text-center mx-0 px-0"
+    class="fill-height text-center mx-0 px-0 pt-0"
     style="max-width: none"
     tag="section"
   >
