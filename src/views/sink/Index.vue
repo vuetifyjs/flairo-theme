@@ -99,6 +99,43 @@
         :to="{ name: 'Home' }"
       />
     </v-row>
+    <v-row
+      justify="center"
+      class="pa-3"
+    >
+      <v-col cols="3">
+        <base-team-member
+          title="CEO"
+          name="Neil Barnett"
+          :social-links="teamSocialLinks"
+          src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairSides&accessoriesType=Round&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Red&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=DarkBrown"
+        />
+      </v-col>
+      <v-col cols="3">
+        <base-team-member
+          title="COO"
+          name="Sherri Cayne"
+          :social-links="teamSocialLinks"
+          src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Brown"
+        />
+      </v-col>
+      <v-col cols="3">
+        <base-team-member
+          title="CTO"
+          name="Erica Baker"
+          :social-links="teamSocialLinks"
+          src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Heather&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=Tanned"
+        />
+      </v-col>
+      <v-col cols="3">
+        <base-team-member
+          title="CFO"
+          name="Wesley Graves"
+          :social-links="teamSocialLinks"
+          src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairFrizzle&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerShirt&eyeType=Wink&eyebrowType=DefaultNatural&mouthType=Tongue&skinColor=Light"
+        />
+      </v-col>
+    </v-row>
     <v-row justify="center">
       <base-feature-alt
         indented
@@ -240,6 +277,11 @@
         { name: 'Javascript', value: 100 },
         { name: 'Node', value: 80 },
         { name: 'Swift', value: 50 },
+      ],
+      teamSocialLinks: [
+        { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
+        { link: 'https://twitter.com', icon: 'mdi-twitter' },
+        { link: 'mailto:sample@example.com', icon: 'mdi-email' },
       ],
     }),
   }
