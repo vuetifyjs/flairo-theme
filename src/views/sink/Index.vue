@@ -18,6 +18,21 @@
         Buy Now
       </base-btn>
     </base-banner>
+    <v-row justify="start">
+      <template v-for="skill in skills">
+        <v-col
+          :key="skill.name"
+          cols="6"
+        >
+          <base-skill-meter
+            class="px-3"
+            rounded
+            :skill="skill.name"
+            :value="skill.value"
+          />
+        </v-col>
+      </template>
+    </v-row>
     <base-banner
       heading="super flexible"
       body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
@@ -219,7 +234,13 @@
     name: 'Sink',
 
     data: () => ({
-
+      skills: [
+        { name: 'Vue.js', value: 100 },
+        { name: 'Python', value: 90 },
+        { name: 'Javascript', value: 100 },
+        { name: 'Node', value: 80 },
+        { name: 'Swift', value: 50 },
+      ],
     }),
   }
 </script>
