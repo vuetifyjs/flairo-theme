@@ -1,13 +1,16 @@
 <template>
   <v-hover #default="{ hover }">
     <v-card
-      max-width="400"
+      max-height="400"
       width="auto"
+      class="px-auto"
       flat
+      outlined
       tile
     >
       <v-img
-        max-width="400"
+        max-height="300"
+        contain
         :src="src"
       >
         <v-fade-transition>
