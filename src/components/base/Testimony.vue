@@ -55,7 +55,7 @@
           src: this.backgroundSrc,
           maxWidth: '100%',
           maxHeight: '500px',
-          gradient: 'to right, rgba(59, 64, 69, .4), rgba(59, 64, 69, .7)',
+          gradient: 'to right, rgba(241, 241, 241, .2), rgba(241, 241, 241, .5)',
         }
         return {
           name: this.backgroundSrc ? VImg : VSheet,
