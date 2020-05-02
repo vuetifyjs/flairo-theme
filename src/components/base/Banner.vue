@@ -1,6 +1,6 @@
 <template>
   <v-img
-    :src="require('@/assets/background.png')"
+    :src="require('@/assets/background-light.png')"
     class="white--text"
     max-width="100%"
     gradient="to right, rgba(59, 64, 69, .4), rgba(59, 64, 69, .9)"

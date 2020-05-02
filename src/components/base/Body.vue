@@ -23,13 +23,8 @@
 </template>
 
 <script>
-  // Mixins
-  import Heading from '@/mixins/heading'
-
   export default {
     name: 'BaseBody',
-
-    mixins: [Heading],
 
     inject: ['theme'],
 
@@ -47,15 +42,20 @@
         type: String,
         default: 'p',
       },
+      align: {
+        type: String,
+        default: 'left',
+        validator: (v) => ['left', 'center', 'right'].includes(v),
+      },
       text: String,
     },
 
     computed: {
       classes () {
         return [
-          'grey--text',
+          'black--text',
           this.theme.isDark ? 'text--lighten-1' : 'text--darken-1',
-          `text-${this.heading.align}`,
+          `text-${this.align}`,
           `mb-${this.space}`,
         ]
       },

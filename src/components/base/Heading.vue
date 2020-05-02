@@ -21,25 +21,12 @@
       theme: {
         default: () => ({ isDark: false }),
       },
-      heading: {
-        default: () => ({ align: 'left' }),
-      },
-    },
-
-    provide () {
-      return {
-        heading: {
-          align: this.align,
-        },
-      }
     },
 
     props: {
       align: {
         type: String,
-        default () {
-          return this.heading.align
-        },
+        default: 'left',
       },
       dense: {
         type: Boolean,
