@@ -11,6 +11,11 @@
       style="max-width: 1200px;"
       class="mx-auto"
     >
+      <v-img
+        max-width="200px"
+        max-height="120px"
+        :src="require('@/assets/campfire.svg')"
+      />
       <v-toolbar-title class="headline">
         <span v-text="appTitle" />
       </v-toolbar-title>
