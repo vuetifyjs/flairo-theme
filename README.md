@@ -1,4 +1,4 @@
-# project-crescent
+# Flairo
 
 ## Project setup
 ```

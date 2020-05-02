@@ -98,7 +98,7 @@
 
     data () {
       return {
-        appTitle: 'Crescent',
+        appTitle: 'Flairo',
         searchValue: '',
         items: [
           { name: 'Home', icon: 'mdi-home' },
