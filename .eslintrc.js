@@ -11,6 +11,7 @@ module.exports = {
     'no-console': 'off',
     'no-debugger': 'off',
     'linebreak-style': ['error', 'unix'],
-    'vue/require-default-prop': 'off'
+    'vue/require-default-prop': 'off',
+    'template-curly-spacing': 'off',
   },
 }
