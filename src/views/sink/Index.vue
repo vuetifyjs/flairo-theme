@@ -174,6 +174,56 @@
       />
     </v-row>
     <v-row justify="center">
+      <base-pricing-plan
+        class="mx-5"
+        price="$59.99"
+        frequency="month"
+        title="Basic Plan"
+        subtitle="Starting at"
+        :features="planFeatures"
+      >
+        <v-btn
+          color="primary"
+          depressed
+          large
+          class="px-12 mx-auto"
+          v-text="'Order Now'"
+        />
+      </base-pricing-plan>
+      <base-pricing-plan
+        class="mx-5"
+        price="$99.99"
+        frequency="month"
+        title="Pro Plan"
+        subtitle="Starting at"
+        :features="planFeatures"
+      >
+        <v-btn
+          color="primary"
+          depressed
+          large
+          class="px-12 mx-auto"
+          v-text="'Order Now'"
+        />
+      </base-pricing-plan>
+      <base-pricing-plan
+        class="mx-5"
+        price="$999.99"
+        frequency="month"
+        title="Enterprise Plan"
+        subtitle="Starting at"
+        :features="planFeatures"
+      >
+        <v-btn
+          color="primary"
+          depressed
+          large
+          class="px-12 mx-auto"
+          v-text="'Order Now'"
+        />
+      </base-pricing-plan>
+    </v-row>
+    <v-row justify="center">
       <base-feature-alt
         indented
         rounded
@@ -293,6 +343,12 @@
         { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
         { link: 'https://twitter.com', icon: 'mdi-twitter' },
         { link: 'mailto:sample@example.com', icon: 'mdi-email' },
+      ],
+      planFeatures: [
+        'Wordpress',
+        'HTML5 & CSS3',
+        'PSD Files',
+        'Unlimited Support',
       ],
     }),
   }
