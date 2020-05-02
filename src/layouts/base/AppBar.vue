@@ -11,7 +11,12 @@
       :src="require('@/assets/campfire.svg')"
     />
     <v-toolbar-title class="headline">
-      <span v-text="appData.title" />
+      <router-link
+        :to="{ name: 'Home' }"
+        tag="h4"
+        style="cursor: pointer"
+        v-text="appData.title"
+      />
     </v-toolbar-title>
     <v-spacer />
     <div>
