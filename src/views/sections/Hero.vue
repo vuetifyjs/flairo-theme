@@ -3,7 +3,10 @@
     id="hero"
     space="0"
   >
-    <v-img :src="require('@/assets/background.png')">
+    <v-img
+      :src="require('@/assets/background.png')"
+      min-height="695px"
+    >
       <v-theme-provider dark>
         <v-container class="fill-height px-5 py-12">
           <v-responsive
@@ -11,7 +14,7 @@
             height="100%"
             width="100%"
           >
-            <v-row>
+            <v-row align="center">
               <v-col cols="6">
                 <base-heading
                   class="text-uppercase font-weight-bold"
@@ -42,6 +45,7 @@
               <v-col cols="6">
                 <v-img
                   :src="require('@/assets/camping.svg')"
+                  min-height="365px"
                   max-width="650px"
                 />
               </v-col>

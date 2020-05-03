@@ -13,7 +13,10 @@
           class="mb-6"
           size="128"
         >
-          <v-img :src="src" />
+          <v-img
+            :src="src"
+            min-height="128px"
+          />
         </v-avatar>
 
         <p class="font-italic text-center black--text mb-6 d-block">

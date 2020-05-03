@@ -1,7 +1,8 @@
 <template>
   <base-section id="construction">
     <v-img
-      :src="require('@/assets/under-construction.svg')"
+      :src="require('@/assets/under-construction-dual.svg')"
+      min-height="500px"
       max-height="500px"
     >
       <v-theme-provider>
@@ -12,7 +13,7 @@
             width="100%"
           >
             <base-heading
-              class="text-uppercase font-weight-bold"
+              class="text-uppercase font-weight-bold pb-12"
               align="center"
               title="Under Construction"
             />

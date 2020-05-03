@@ -9,6 +9,7 @@
       tile
     >
       <v-img
+        min-height="300"
         max-height="300"
         contain
         :src="src"
