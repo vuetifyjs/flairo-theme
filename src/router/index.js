@@ -53,6 +53,11 @@ const router = new Router({
           name: 'Sink',
           component: () => import('@/views/sink/Index.vue'),
         },
+        {
+          path: '*',
+          name: 'NotFound',
+          component: () => import('@/views/not-found/Index.vue'),
+        },
       ],
     },
   ],

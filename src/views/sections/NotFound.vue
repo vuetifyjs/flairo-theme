@@ -1,7 +1,7 @@
 <template>
-  <base-section id="construction">
+  <base-section id="not-found">
     <v-img
-      :src="require('@/assets/under-construction-dual.svg')"
+      :src="require('@/assets/not-found.svg')"
       min-height="500px"
       max-height="500px"
     >
@@ -15,7 +15,7 @@
             <base-heading
               class="text-uppercase font-weight-bold pb-12"
               align="center"
-              title="Under Construction"
+              title="That page doesn't exist"
             />
           </v-responsive>
         </v-container>
@@ -26,7 +26,7 @@
 
 <script>
   export default {
-    name: 'SectionConstruction',
+    name: 'SectionNotFound',
   }
 </script>
 
