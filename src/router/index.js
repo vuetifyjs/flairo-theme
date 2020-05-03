@@ -26,27 +26,27 @@ const router = new Router({
         {
           path: 'about',
           name: 'About',
-          component: () => import('@/views/home/Index.vue'),
+          component: () => import('@/views/about/Index.vue'),
         },
         {
           path: 'services',
           name: 'Services',
-          component: () => import('@/views/home/Index.vue'),
+          component: () => import('@/views/services/Index.vue'),
         },
         {
           path: 'portfolio',
           name: 'Portfolio',
-          component: () => import('@/views/home/Index.vue'),
+          component: () => import('@/views/portfolio/Index.vue'),
         },
         {
           path: 'blog',
           name: 'Blog',
-          component: () => import('@/views/home/Index.vue'),
+          component: () => import('@/views/blog/Index.vue'),
         },
         {
           path: 'contact',
           name: 'Contact',
-          component: () => import('@/views/home/Index.vue'),
+          component: () => import('@/views/contact/Index.vue'),
         },
         {
           path: 'sink',
