@@ -4,7 +4,11 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
-    <slot />
+    <slot v-if="!icon" />
+    <v-icon
+      v-else
+      v-text="icon"
+    />
   </v-btn>
 </template>
 
@@ -13,6 +17,7 @@
     name: 'Btn',
 
     props: {
+      icon: String,
       color: {
         type: String,
         default: 'primary',

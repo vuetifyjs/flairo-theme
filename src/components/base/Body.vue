@@ -53,7 +53,7 @@
     computed: {
       classes () {
         return [
-          this.theme.isDark ? 'white--text' : 'black--text',
+          this.theme.isDark ? 'white--text' : 'offblack--text',
           this.theme.isDark ? 'text--lighten-1' : 'text--darken-1',
           `text-${this.align}`,
           `mb-${this.space}`,

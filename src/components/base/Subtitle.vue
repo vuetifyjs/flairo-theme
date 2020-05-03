@@ -33,7 +33,7 @@
       classes () {
         return [
           ...Heading.computed.classes.call(this),
-          'black--text',
+          this.theme.isDark ? 'white--text' : 'offblack--text',
         ]
       },
     },

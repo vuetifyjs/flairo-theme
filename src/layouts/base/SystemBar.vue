@@ -11,14 +11,14 @@
       tile
       height="60px"
       :ripple="false"
-      :href="`tel:${contact.phone.value}`"
+      :href="`tel:${appData.contact.phone.value}`"
     >
       <v-icon
         left
         class="mr-2"
-        v-text="contact.phone.icon"
+        v-text="appData.contact.phone.icon"
       />
-      <span v-text="contact.phone.value" />
+      <span v-text="appData.contact.phone.value" />
     </v-btn>
 
     <v-btn
@@ -27,19 +27,19 @@
       tile
       height="60px"
       :ripple="false"
-      :href="`mailto:${contact.email.value}`"
+      :href="`mailto:${appData.contact.email.value}`"
     >
       <v-icon
         left
         class="mr-2"
-        v-text="contact.email.icon"
+        v-text="appData.contact.email.icon"
       />
-      <span v-text="contact.email.value" />
+      <span v-text="appData.contact.email.value" />
     </v-btn>
     <v-spacer />
     <template v-if="$vuetify.breakpoint.mdAndUp">
       <v-btn
-        v-for="site in socialLinks"
+        v-for="site in appData.socialLinks"
         :key="site.name"
         :href="site.link"
         target="_blank"
@@ -58,22 +58,5 @@
 <script>
   export default {
     name: 'BaseSystemBar',
-
-    data () {
-      return {
-        socialLinks: [
-          { name: 'Facebook', icon: 'mdi-facebook', link: 'https://facebook.com' },
-          { name: 'Instagram', icon: 'mdi-instagram', link: 'https://instagram.com' },
-          { name: 'Twitter', icon: 'mdi-twitter', link: 'https://twitter.com' },
-          { name: 'Soundcloud', icon: 'mdi-soundcloud', link: 'https://soundcloud.com' },
-          { name: 'Twitch', icon: 'mdi-twitch', link: 'https://twitch.tv' },
-          { name: 'Youtube', icon: 'mdi-youtube', link: 'https://youtube.com' },
-        ],
-        contact: {
-          phone: { value: '+1 555 555-5555', icon: 'mdi-phone' },
-          email: { value: 'sample@example.com', icon: 'mdi-email' },
-        },
-      }
-    },
   }
 </script>

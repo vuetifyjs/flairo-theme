@@ -2,7 +2,7 @@
   <v-responsive
     :class="classes"
     class="base-divider"
-    max-width="28"
+    :max-width="maxWidth"
     v-bind="$attrs"
     v-on="$listeners"
   >
@@ -19,6 +19,10 @@
       color: String,
       align: String,
       dense: Boolean,
+      maxWidth: {
+        type: [Number, String],
+        default: 28,
+      },
       space: {
         type: [Number, String],
         default: 6,

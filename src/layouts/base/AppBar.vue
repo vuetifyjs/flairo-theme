@@ -23,7 +23,7 @@
       <v-tabs
         hide-slider
         optional
-        :background-color="color || 'white'"
+        background-color="transparent"
         v-bind="tabAttrs"
       >
         <v-tab
@@ -55,7 +55,7 @@
           <template #activator="{ on }">
             <v-tab
               :value="undefined"
-              active-class="black--text"
+              active-class="offblack--text"
               v-on="on"
             >
               <v-icon

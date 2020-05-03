@@ -19,6 +19,7 @@
         'flexible-callout',
         'our-team',
         'standout-callout',
+        'info',
       ]),
     ],
 

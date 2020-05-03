@@ -28,6 +28,11 @@
       >
         {{ icon }}
       </v-icon>
+      <span
+        v-else-if="text"
+        class="text-wrap"
+        v-text="text"
+      />
     </v-avatar>
   </div>
 </template>
@@ -46,6 +51,7 @@
         type: String,
         default: 'primary',
       },
+      text: String,
       tile: Boolean,
       rounded: Boolean,
       outlined: Boolean,

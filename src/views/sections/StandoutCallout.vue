@@ -13,7 +13,7 @@
         rounded
         class="my-10 elevation-0"
         color="white primary--text"
-        flat
+        depressed
       >
         <span
           class="font-weight-black text-none"
