@@ -14,7 +14,11 @@
 
     mixins: [
       LoadSections([
-        'construction',
+        'story',
+        'story-alt',
+        'our-team',
+        'stats',
+        'info',
       ]),
     ],
 
