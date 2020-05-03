@@ -14,7 +14,9 @@
 
     mixins: [
       LoadSections([
-        'construction',
+        'our-services',
+        'why-choose-us',
+        'info',
       ]),
     ],
 

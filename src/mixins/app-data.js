@@ -23,6 +23,26 @@ export default {
           'Sed pharetra metus vitae diam blandit.',
           'Proin quis lacus lobortis, semper arcu.',
         ],
+        blogPosts: [
+          {
+            title: 'Lorem ipsum dolor sit amet',
+            text: 'Ut enim ad minima veniam, quis nostrum exercitatio ut enim ad minima. Ut enim ad minima veniam, quis nostrum exercitatio ut enim ad minima.',
+            date: new Date().toLocaleDateString(),
+            to: { name: 'Home' },
+          },
+          {
+            title: 'Lorem ipsum dolor sit amet',
+            text: 'Ut enim ad minima veniam, quis nostrum exercitatio ut enim ad minima. Ut enim ad minima veniam, quis nostrum exercitatio ut enim ad minima.',
+            date: new Date(Date.now() - 1000 * 60 * 60 * 24).toLocaleDateString(),
+            to: { name: 'Home' },
+          },
+          {
+            title: 'Lorem ipsum dolor sit amet',
+            text: 'Ut enim ad minima veniam, quis nostrum exercitatio ut enim ad minima. Ut enim ad minima veniam, quis nostrum exercitatio ut enim ad minima.',
+            date: new Date(Date.now() - 1000 * 60 * 60 * 24 * 2).toLocaleDateString(),
+            to: { name: 'Home' },
+          },
+        ],
         recentPosts: [
           {
             text: 'Lorem ipsum dolor sit amet, consectetur. Donec at nunc eget massa bibendum ultrices.',
