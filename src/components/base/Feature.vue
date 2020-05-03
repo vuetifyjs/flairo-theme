@@ -1,8 +1,5 @@
 <template>
-  <v-card
-    width="300"
-    flat
-  >
+  <v-card flat>
     <v-card-text>
       <v-row justify="center">
         <base-avatar
@@ -13,24 +10,20 @@
           :outline-color="outlineColor"
         />
       </v-row>
-      <v-row justify="center">
-        <v-col cols="8">
-          <span
-            class="title primary--text"
-            v-text="heading"
-          />
-        </v-col>
-      </v-row>
       <v-row
-        v-if="body"
         justify="center"
+        align="center"
       >
-        <v-col cols="12">
-          <span
-            class="body-2"
-            v-text="body"
-          />
-        </v-col>
+        <base-subheading
+          class="title primary--text mt-4"
+          align="center"
+          :title="title"
+        />
+        <base-body
+          v-if="text"
+          :text="text"
+          align="center"
+        />
       </v-row>
     </v-card-text>
   </v-card>
@@ -49,11 +42,11 @@
         type: Boolean,
         default: false,
       },
-      heading: {
+      title: {
         type: String,
         required: true,
       },
-      body: {
+      text: {
         type: String,
         default: '',
       },

@@ -42,7 +42,7 @@
               <v-col cols="6">
                 <v-img
                   :src="require('@/assets/camping.svg')"
-                  max-height="600px"
+                  max-width="650px"
                 />
               </v-col>
             </v-row>

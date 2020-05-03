@@ -15,6 +15,10 @@
     mixins: [
       LoadSections([
         'hero',
+        'welcome-features',
+        'flexible-callout',
+        'our-team',
+        'standout-callout',
       ]),
     ],
 
