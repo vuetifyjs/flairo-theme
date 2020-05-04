@@ -1,9 +1,6 @@
 <template>
-  <v-card
-    :width="indented ? 400 : 300"
-    flat
-  >
-    <v-card-title>
+  <v-card flat>
+    <v-card-text>
       <base-avatar
         class="mr-6"
         :tile="tile"
@@ -17,14 +14,12 @@
       />
       <span
         class="title primary--text"
-        v-text="heading"
+        v-text="title"
       />
-    </v-card-title>
-    <v-card-text class="text-left">
       <div
         class="body-2"
         :class="{ 'pl-12': indented, 'ml-12': indented }"
-        v-text="body"
+        v-text="text"
       />
       <router-link
         v-if="to"
@@ -71,18 +66,15 @@
         type: Boolean,
         default: false,
       },
-      heading: {
+      title: {
         type: String,
         required: true,
       },
-      body: {
+      text: {
         type: String,
         default: '',
       },
-      to: {
-        type: Object,
-        default: () => ({}),
-      },
+      to: Object,
     },
   }
 </script>

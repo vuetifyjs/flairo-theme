@@ -14,6 +14,7 @@
 
     mixins: [
       LoadSections([
+        'map',
         'get-in-touch',
         'info',
       ]),

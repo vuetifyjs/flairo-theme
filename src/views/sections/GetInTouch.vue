@@ -49,59 +49,55 @@
       </v-col>
       <v-col cols="9">
         <v-row no-gutters>
-          <v-col cols="12">
-            <v-row no-gutters>
-              <v-col cols="6">
-                <base-text-field
-                  v-model="name"
-                  label="Name"
-                  class="mr-1"
-                />
-              </v-col>
-              <v-col cols="6">
-                <base-text-field
-                  v-model="email"
-                  label="Email"
-                  class="ml-1"
-                />
-              </v-col>
-            </v-row>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <base-text-field
-                  v-model="website"
-                  label="Website"
-                  class="mr-1"
-                />
-              </v-col>
-              <v-col cols="6">
-                <base-text-field
-                  v-model="subject"
-                  label="Subject"
-                  class="ml-1"
-                />
-              </v-col>
-            </v-row>
-            <v-row no-gutters>
-              <v-textarea
-                v-model="message"
-                label="Message"
-                outlined
-              />
-            </v-row>
-            <v-row no-gutters>
-              <base-btn
-                color="primary"
-                class="px-12"
-                depressed
-              >
-                <span
-                  class="font-weight-bold"
-                  v-text="'Submit Message'"
-                />
-              </base-btn>
-            </v-row>
+          <v-col cols="6">
+            <base-text-field
+              v-model="name"
+              label="Name"
+              class="mr-1"
+            />
           </v-col>
+          <v-col cols="6">
+            <base-text-field
+              v-model="email"
+              label="Email"
+              class="ml-1"
+            />
+          </v-col>
+        </v-row>
+        <v-row no-gutters>
+          <v-col cols="6">
+            <base-text-field
+              v-model="website"
+              label="Website"
+              class="mr-1"
+            />
+          </v-col>
+          <v-col cols="6">
+            <base-text-field
+              v-model="subject"
+              label="Subject"
+              class="ml-1"
+            />
+          </v-col>
+        </v-row>
+        <v-row no-gutters>
+          <v-textarea
+            v-model="message"
+            label="Message"
+            outlined
+          />
+        </v-row>
+        <v-row no-gutters>
+          <base-btn
+            color="primary"
+            class="px-12"
+            depressed
+          >
+            <span
+              class="font-weight-bold"
+              v-text="'Submit Message'"
+            />
+          </base-btn>
         </v-row>
       </v-col>
     </v-row>
