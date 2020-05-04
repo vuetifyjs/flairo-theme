@@ -14,7 +14,7 @@
 
     mixins: [
       LoadSections([
-        'construction',
+        'get-in-touch',
       ]),
     ],
 
