@@ -15,6 +15,7 @@
     mixins: [
       LoadSections([
         'get-in-touch',
+        'info',
       ]),
     ],
 
