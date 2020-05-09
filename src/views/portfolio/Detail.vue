@@ -6,24 +6,22 @@
   import LoadSections from '@/mixins/load-sections'
 
   export default {
-    name: 'Portfolio',
+    name: 'ProjectDetail',
 
-    metaInfo: { title: 'Portfolio' },
+    metaInfo: { title: 'Project Details' },
 
     extends: View,
 
     mixins: [
       LoadSections([
-        'project-gallery',
+        'project-detail',
+        'project-gallery-alt',
         'info',
       ]),
     ],
 
     props: {
-      id: {
-        type: String,
-        default: 'home',
-      },
+      id: [Number, String],
     },
   }
 </script>

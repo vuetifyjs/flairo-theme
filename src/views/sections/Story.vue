@@ -49,7 +49,7 @@
           min-height="500px"
           height="500px"
           min-width="600px"
-          :src="require('@/assets/group.jpg')"
+          :src="require('@/assets/about/priscilla-du-preez-XkKCui44iM0-unsplash.jpg')"
         />
       </v-col>
     </v-row>

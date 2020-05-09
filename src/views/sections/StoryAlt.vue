@@ -12,7 +12,7 @@
           min-height="500px"
           height="500px"
           min-width="600px"
-          :src="require('@/assets/hands.jpg')"
+          :src="require('@/assets/about/clay-banks-LjqARJaJotc-unsplash.jpg')"
         />
       </v-col>
       <v-col cols="6">
