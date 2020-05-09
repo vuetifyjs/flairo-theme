@@ -34,7 +34,7 @@
       shuffledProjects () {
         const projs = this.appData.projects.slice()
         const breakpoint = this.$vuetify.breakpoint.name
-        console.log(breakpoint)
+
         projs.sort(() => Math.random() - 0.5)
         const sizeMap = {
           xs: 3,
