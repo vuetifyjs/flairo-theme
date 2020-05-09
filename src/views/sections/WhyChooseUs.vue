@@ -49,61 +49,25 @@
           color="white"
           align="left"
         />
-        <v-row
-          v-for="(post, i) in appData.blogPosts"
-          :key="i"
-        >
-          <v-col class="shrink">
-            <base-avatar
-              :key="`post-date-${i}`"
-              color="grey"
-              tile
-              size="100"
-              class="ma-2"
-            />
-          </v-col>
-          <v-col>
-            <base-subheading
-              :title="post.title"
-              class="primary--text"
-              space="0"
-            />
-            <base-body
-              :key="`post-text-${i}`"
-              space="0"
-              :text="post.text"
-            />
-            <div>
-              <router-link
-                :to="post.to"
-                class="text-none"
-                v-text="'Read More'"
-              />
-              <v-icon
-                class="ml-4 mr-2"
-                small
-                v-text="'mdi-clock-outline'"
-              />
-              <span v-text="post.date" />
-              <v-icon
-                class="ml-4 mr-2"
-                v-text="'mdi-comment'"
-              />
-              <span
-                class="font-italic"
-                v-text="'comments'"
-              />
-            </div>
-          </v-col>
-        </v-row>
+        <template v-for="(post, i) in appData.blogPosts">
+          <blog-post
+            :key="i"
+            :post="post"
+          />
+        </template>
       </v-col>
     </v-row>
   </base-section>
 </template>
 
 <script>
+  import BlogPost from '@/components/blog/Post'
+
   export default {
     name: 'SectionWhyChooseUs',
+    components: {
+      BlogPost,
+    },
     data () {
       return {
         reasons: [
