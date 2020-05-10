@@ -14,7 +14,15 @@
 
     mixins: [
       LoadSections([
-        'construction',
+        'blog-asset',
+        'blog-header',
+        'blog-excerpt',
+        'blog-quote',
+        'blog-excerpt-left-img',
+        'blog-excerpt-short',
+        'blog-excerpt-right-img',
+        'blog-author',
+        'related-blog-posts',
       ]),
     ],
 

@@ -15,6 +15,7 @@
         type: String,
         default: 'body-1',
       },
+      color: String,
       space: {
         type: [String, Number],
         default: 0,
@@ -33,7 +34,7 @@
       classes () {
         return [
           ...Heading.computed.classes.call(this),
-          this.theme.isDark ? 'white--text' : 'offblack--text',
+          this.color ? this.color : this.theme.isDark ? 'white--text' : 'offblack--text',
         ]
       },
     },

@@ -2,7 +2,8 @@
   <v-navigation-drawer
     v-model="navOpen"
     width="400px"
-    class="py-5"
+    height="100%"
+    class="py-5 pl-3"
     app
     absolute
     clipped

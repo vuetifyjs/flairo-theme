@@ -4,6 +4,7 @@
     dark
     color="primary"
     height="60px"
+    style="z-index: 5;"
   >
     <v-btn
       class="mx-2"
