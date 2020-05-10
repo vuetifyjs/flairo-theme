@@ -2,6 +2,7 @@
   <v-app-bar
     app
     elevate-on-scroll
+    style="right: 0"
     :color="color || 'white'"
     height="150px"
   >

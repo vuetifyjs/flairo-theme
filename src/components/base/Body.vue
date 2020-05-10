@@ -10,11 +10,13 @@
     <!-- Only use v-html for user data -->
     <div
       v-if="text"
+      :style="textStyles"
       v-text="text"
     />
 
     <div
       v-else-if="html"
+      :style="textStyles"
       v-html="html"
     />
 
@@ -48,6 +50,10 @@
         validator: (v) => ['left', 'center', 'right'].includes(v),
       },
       text: String,
+      clamp: {
+        type: [String, Number],
+        default: 'none',
+      },
     },
 
     computed: {
@@ -62,6 +68,14 @@
       styles () {
         return {
           maxWidth: `${this.maxWidth}px`,
+        }
+      },
+      textStyles () {
+        return this.clamp === 'none' ? {} : {
+          display: '-webkit-box',
+          '-webkit-line-clamp': String(this.clamp),
+          '-webkit-box-orient': 'vertical',
+          overflow: 'hidden',
         }
       },
     },

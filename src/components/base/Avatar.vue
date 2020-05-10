@@ -23,7 +23,7 @@
     >
       <v-icon
         v-if="icon"
-        :color="iconColor"
+        :color="localIconColor"
         :size="size / 3"
       >
         {{ icon }}
@@ -43,6 +43,7 @@
 
     props: {
       icon: String,
+      iconColor: String,
       size: {
         type: [String, Number],
         default: '130',
@@ -59,11 +60,14 @@
     },
 
     data: (vm) => ({
-      iconColor: vm.color === 'primary' ? 'white' : 'primary',
       factor: 6,
     }),
 
     computed: {
+      localIconColor () {
+        if (this.iconColor) return this.iconColor
+        return this.getIconColor()
+      },
       classes () {
         return [
           this.outlined && 'base-avatar--outlined',
@@ -95,16 +99,6 @@
               : '50%',
         }
       },
-    },
-
-    watch: {
-      color () {
-        this.iconColor = this.getIconColor()
-      },
-    },
-
-    mounted () {
-      this.iconColor = this.getIconColor()
     },
 
     methods: {

@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <base-system-bar />
-    <base-app-bar
+    <system-bar />
+    <app-bar
       block
       search
     />
-
     <base-view />
+    <blog-sidebar v-if="$route.name === 'Blog'" />
   </v-app>
 </template>
 
@@ -15,9 +15,10 @@
     name: 'BaseLayout',
 
     components: {
-      BaseSystemBar: () => import('./SystemBar'),
-      BaseAppBar: () => import('./AppBar'),
-      BaseView: () => import('./View'),
+      AppBar: () => import('@/layouts/base/AppBar'),
+      SystemBar: () => import('@/layouts/base/SystemBar'),
+      BlogSidebar: () => import('@/layouts/base/BlogSidebar'),
+      BaseView: () => import('@/layouts/base/View'),
     },
   }
 </script>

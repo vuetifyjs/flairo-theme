@@ -215,6 +215,53 @@ export default {
             category: 'day',
           },
         ],
+        instagramPosts: [
+          {
+            id: 1,
+            src: require('@/assets/instagram/ahmad-kadhim-GeHVEDrqMB8-unsplash.jpg'),
+          },
+          {
+            id: 2,
+            src: require('@/assets/instagram/ciocan-ciprian-XGny9I-k9RM-unsplash.jpg'),
+          },
+          {
+            id: 3,
+            src: require('@/assets/instagram/lukasz-szmigiel-dAgtO5H8cXg-unsplash.jpg'),
+          },
+          {
+            id: 4,
+            src: require('@/assets/instagram/malka-l0m2p_k5VJ8-unsplash.jpg'),
+          },
+          {
+            id: 5,
+            src: require('@/assets/instagram/max-delsid-8-Aght_oHog-unsplash.jpg'),
+          },
+          {
+            id: 6,
+            src: require('@/assets/instagram/ricardo-gomez-angel-SAJD-Q4FntE-unsplash.jpg'),
+          },
+        ],
+        tweets: [
+          {
+            id: 1,
+            author: '@vuetifyjs',
+            date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus sit amet nisl sollicitudin auctor. Nam dapibus odio neque, sed proin.',
+          },
+          {
+            id: 2,
+            author: '@vuetifyjs',
+            date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus sit amet nisl sollicitudin auctor. Nam dapibus odio neque, sed proin.',
+          },
+        ],
+        tags: [
+          'Portfolio',
+          'Theme',
+          'Camping',
+          'Forest',
+          'Hiking',
+        ],
       }
     },
   },
