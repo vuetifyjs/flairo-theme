@@ -7,7 +7,7 @@
     height="150px"
   >
     <v-img
-      max-width="200px"
+      :max-width="$vuetify.breakpoint.mdAndUp ? '200px' : '100px'"
       max-height="120px"
       min-height="120px"
       :src="require('@/assets/campfire.svg')"
@@ -41,7 +41,7 @@
         >
           <span v-text="item.name" />
           <v-icon
-            v-if="item.icon"
+            v-if="item.icon && $vuetify.breakpoint.mdAndUp"
             small
             right
             v-text="item.icon"

@@ -15,7 +15,10 @@
             width="100%"
           >
             <v-row align="center">
-              <v-col cols="6">
+              <v-col
+                cols="12"
+                md="6"
+              >
                 <base-heading
                   class="text-uppercase font-weight-bold"
                   :title="`Why ${appData.title}?`"
@@ -42,7 +45,10 @@
                   v-text="`Purchase ${appData.title}`"
                 />
               </v-col>
-              <v-col cols="6">
+              <v-col
+                cols="12"
+                md="6"
+              >
                 <v-img
                   :src="require('@/assets/camping.svg')"
                   min-height="365px"

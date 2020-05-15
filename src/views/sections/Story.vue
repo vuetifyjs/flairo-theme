@@ -9,7 +9,8 @@
       justify="center"
     >
       <v-col
-        cols="6"
+        cols="12"
+        md="6"
         class="px-10"
       >
         <base-heading
@@ -44,7 +45,10 @@
           />
         </base-btn>
       </v-col>
-      <v-col cols="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <v-img
           min-height="500px"
           height="500px"

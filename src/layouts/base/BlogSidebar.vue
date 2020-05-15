@@ -5,6 +5,7 @@
     height="100%"
     class="py-5 pl-3"
     app
+    fixed
     absolute
     clipped
     floating
@@ -134,8 +135,8 @@
       >
         <template v-for="tag in appData.tags">
           <base-tag
-            :text="tag"
             :key="tag"
+            :text="tag"
           />
         </template>
       </v-row>

@@ -11,7 +11,8 @@
       <template v-for="(stat, i) in stats">
         <v-col
           :key="i"
-          cols="3"
+          cols="6"
+          md="3"
           class="text-center"
         >
           <base-stat

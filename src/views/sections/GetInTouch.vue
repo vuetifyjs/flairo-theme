@@ -6,6 +6,7 @@
     <v-row align="start">
       <v-col
         cols="3"
+        sm="6"
         class="px-12"
       >
         <base-subheading
@@ -47,36 +48,51 @@
           :text="appData.contact.phone.value"
         />
       </v-col>
-      <v-col cols="9">
+      <v-col
+        cols="9"
+        sm="6"
+      >
         <v-row no-gutters>
-          <v-col cols="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <base-text-field
               v-model="name"
               label="Name"
-              class="mr-1"
+              :class="$vuetify.breakpoint.mdAndUp ? 'mr-1' : ''"
             />
           </v-col>
-          <v-col cols="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <base-text-field
               v-model="email"
+              :class="$vuetify.breakpoint.mdAndUp ? 'ml-1' : ''"
               label="Email"
-              class="ml-1"
             />
           </v-col>
         </v-row>
         <v-row no-gutters>
-          <v-col cols="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <base-text-field
               v-model="website"
               label="Website"
-              class="mr-1"
+              :class="$vuetify.breakpoint.mdAndUp ? 'mr-1' : ''"
             />
           </v-col>
-          <v-col cols="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <base-text-field
               v-model="subject"
+              :class="$vuetify.breakpoint.mdAndUp ? 'ml-1' : ''"
               label="Subject"
-              class="ml-1"
             />
           </v-col>
         </v-row>

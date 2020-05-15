@@ -10,7 +10,8 @@
       justify="center"
     >
       <v-col
-        cols="6"
+        cols="12"
+        md="6"
         class="px-3"
       >
         <base-subheading
@@ -38,7 +39,8 @@
         </v-expansion-panels>
       </v-col>
       <v-col
-        cols="6"
+        cols="12"
+        md="6"
         class="px-3"
       >
         <base-subheading

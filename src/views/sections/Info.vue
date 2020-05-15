@@ -8,7 +8,8 @@
         justify="center"
       >
         <v-col
-          cols="3"
+          cols="6"
+          md="3"
           class="px-3"
         >
           <base-subheading :title="`About ${appData.title}`" />
@@ -20,7 +21,8 @@
           <base-body text="Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo." />
         </v-col>
         <v-col
-          cols="3"
+          cols="6"
+          md="3"
           class="px-3"
         >
           <base-subheading title="Recent News" />
@@ -40,7 +42,8 @@
           </template>
         </v-col>
         <v-col
-          cols="3"
+          cols="6"
+          md="3"
           class="px-3"
         >
           <base-subheading title="Recent Posts" />
@@ -50,7 +53,10 @@
           />
           <template v-for="(post, i) in appData.recentPosts">
             <v-row :key="`post-row-${i}`">
-              <v-col cols="3">
+              <v-col
+                v-if="$vuetify.breakpoint.mdAndUp"
+                cols="3"
+              >
                 <base-avatar
                   :key="`post-date-${i}`"
                   color="primary"
@@ -60,7 +66,10 @@
                   :text="post.date"
                 />
               </v-col>
-              <v-col cols="9">
+              <v-col
+                cols="12"
+                md="9"
+              >
                 <base-body
                   :key="`post-text-${i}`"
                   tag="span"
@@ -78,7 +87,8 @@
           </template>
         </v-col>
         <v-col
-          cols="3"
+          cols="6"
+          md="3"
           class="px-3"
         >
           <base-subheading title="Contact Us" />

@@ -7,7 +7,10 @@
       align="center"
       justify="center"
     >
-      <v-col cols="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <v-img
           min-height="500px"
           height="500px"
@@ -15,7 +18,10 @@
           :src="require('@/assets/about/clay-banks-LjqARJaJotc-unsplash.jpg')"
         />
       </v-col>
-      <v-col cols="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <base-heading
           class="font-weight-bold"
           title="Our Values"

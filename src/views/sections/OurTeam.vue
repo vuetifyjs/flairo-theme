@@ -25,7 +25,8 @@
       <template v-for="(employee, i) in teamMembers">
         <v-col
           :key="i"
-          cols="3"
+          cols="6"
+          md="3"
         >
           <base-team-member
             class="pa-3"

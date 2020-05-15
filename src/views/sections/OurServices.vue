@@ -21,9 +21,9 @@
       <template v-for="(feature, i) in features">
         <v-col
           :key="i"
+          cols="12"
+          md="6"
           lg="3"
-          md="4"
-          sm="6"
         >
           <base-feature-alt
             class="pa-3"
