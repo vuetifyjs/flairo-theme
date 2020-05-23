@@ -16,7 +16,7 @@
     <v-row
       justify="center"
       align="stretch"
-      class="px-10"
+      class="px-3"
     >
       <template v-for="(feature, i) in features">
         <v-col
@@ -26,7 +26,7 @@
           lg="3"
         >
           <base-feature-alt
-            class="pa-3"
+            class="pa-1"
             v-bind="feature"
           />
         </v-col>

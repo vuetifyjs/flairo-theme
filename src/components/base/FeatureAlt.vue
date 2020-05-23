@@ -4,7 +4,7 @@
     flat
     v-bind="$attrs"
   >
-    <v-card-text>
+    <v-card-text class="py-0">
       <v-row
         align="start"
         justify="center"

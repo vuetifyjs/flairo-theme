@@ -9,17 +9,21 @@
       justify="center"
       no-gutters
     >
-      <v-col cols="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <v-img
-          class="ml-2"
+          class="ma-1"
           min-height="500px"
           min-width="50%"
           :src="activeProject.src"
         />
       </v-col>
       <v-col
-        cols="6"
-        class="px-10"
+        cols="12"
+        md="6"
+        class="px-5 py-2"
       >
         <base-heading
           class="font-weight-bold"

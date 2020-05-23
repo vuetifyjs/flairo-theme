@@ -17,8 +17,7 @@
           lg="3"
         >
           <base-project
-            class="my-2 ml-2"
-            :class="{ 'mr-2': i + 1 === shuffledProjects.length }"
+            class="my-2 mx-1"
             v-bind="project"
           />
         </v-col>

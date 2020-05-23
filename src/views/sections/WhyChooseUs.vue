@@ -12,7 +12,7 @@
       <v-col
         cols="12"
         md="6"
-        class="px-3"
+        class="px-3 pb-3"
       >
         <base-subheading
           title="Why Choose Us"
@@ -41,7 +41,7 @@
       <v-col
         cols="12"
         md="6"
-        class="px-3"
+        class="px-3 py-1"
       >
         <base-subheading
           title="Blog Posts"
