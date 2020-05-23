@@ -17,7 +17,7 @@
         color="#0000004D"
         dark
         flat
-        style="position: fixed; top: 300px; right: -35px;"
+        :style="`position: fixed; top: ${$vuetify.breakpoint.smAndDown ? '70px': '230px'}; right: -35px;`"
         width="90"
         v-bind="attrs"
         v-on="on"
