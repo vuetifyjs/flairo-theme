@@ -24,25 +24,29 @@
     <v-row justify="center">
       <base-feature
         icon="mdi-auto-fix"
-        heading="Unlimited Colors"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Unlimited Colors"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="400px"
       />
       <base-feature
         icon="mdi-flash"
-        heading="Responsive Design"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Responsive Design"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="400px"
       />
       <base-feature
         icon="mdi-recycle"
-        heading="Awesome Sliders"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Awesome Sliders"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="400px"
         outlined
         outline-color="black"
       />
       <base-feature
         icon="mdi-water"
-        heading="Unlimited Colors"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Unlimited Colors"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="400px"
       />
     </v-row>
     <v-row justify="center">
@@ -58,30 +62,30 @@
     </v-row>
     <v-row justify="center">
       <base-feature-alt
-        heading="Friendly Support"
+        title="Friendly Support"
         icon="mdi-auto-fix"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
         :to="{ name: 'Home' }"
       />
       <base-feature-alt
-        heading="Responsive"
+        title="Responsive"
         outlined
         icon="mdi-sync mdi-rotate-270"
         avatar-color="primary"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
         :to="{ name: 'Home' }"
       />
       <base-feature-alt
-        heading="Awesome Sliders"
+        title="Awesome Sliders"
         icon="mdi-cog"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
         :to="{ name: 'Home' }"
       />
       <base-feature-alt
-        heading="Unlimited Colors"
+        title="Unlimited Colors"
         icon="mdi-water"
         outlined
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
         :to="{ name: 'Home' }"
       />
     </v-row>
@@ -89,68 +93,84 @@
       justify="center"
       class="pa-3"
     >
-      <v-col cols="3">
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+      >
         <base-team-member
           title="CEO"
           name="Neil Barnett"
           :social-links="teamSocialLinks"
-          src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairSides&accessoriesType=Round&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Red&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=DarkBrown"
+          :src="require('@/assets/team/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg')"
         />
       </v-col>
-      <v-col cols="3">
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+      >
         <base-team-member
           title="COO"
           name="Sherri Cayne"
           :social-links="teamSocialLinks"
-          src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Brown"
+          :src="require('@/assets/team/christopher-campbell-rDEOVtE7vOs-unsplash.jpg')"
         />
       </v-col>
-      <v-col cols="3">
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+      >
         <base-team-member
           title="CTO"
           name="Erica Baker"
           :social-links="teamSocialLinks"
-          src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Heather&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=Tanned"
+          :src="require('@/assets/team/dan-ROJFuWCsfmA-unsplash.jpg')"
         />
       </v-col>
-      <v-col cols="3">
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+      >
         <base-team-member
           title="CFO"
           name="Wesley Graves"
           :social-links="teamSocialLinks"
-          src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairFrizzle&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerShirt&eyeType=Wink&eyebrowType=DefaultNatural&mouthType=Tongue&skinColor=Light"
+          :src="require('@/assets/team/ethan-hoover-0YHIlxeCuhg-unsplash.jpg')"
         />
       </v-col>
     </v-row>
     <v-row justify="center">
       <base-feature-alt
-        indented
         outlined
-        heading="Friendly Support"
+        title="Friendly Support"
         icon="mdi-auto-fix"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="370px"
         :to="{ name: 'Home' }"
       />
       <base-feature-alt
-        indented
         outlined
-        heading="Responsive"
+        title="Responsive"
         icon="mdi-sync mdi-rotate-270"
         avatar-color="black"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="370px"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
         :to="{ name: 'Home' }"
       />
       <base-feature-alt
-        indented
-        heading="Awesome Sliders"
+        title="Awesome Sliders"
         icon="mdi-cog"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="370px"
         :to="{ name: 'Home' }"
       />
     </v-row>
     <v-row justify="center">
       <base-pricing-plan
-        class="mx-5"
+        class="mx-5 my-1"
         price="$59.99"
         frequency="month"
         title="Basic Plan"
@@ -166,7 +186,7 @@
         />
       </base-pricing-plan>
       <base-pricing-plan
-        class="mx-5"
+        class="mx-5 my-1"
         price="$99.99"
         frequency="month"
         title="Pro Plan"
@@ -182,7 +202,7 @@
         />
       </base-pricing-plan>
       <base-pricing-plan
-        class="mx-5"
+        class="mx-5 my-1"
         price="$999.99"
         frequency="month"
         title="Enterprise Plan"
@@ -200,28 +220,28 @@
     </v-row>
     <v-row justify="center">
       <base-feature-alt
-        indented
         rounded
-        heading="Friendly Support"
+        title="Friendly Support"
         icon="mdi-auto-fix"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="400px"
         :to="{ name: 'Home' }"
       />
       <base-feature-alt
-        indented
         rounded
-        heading="Responsive"
+        title="Responsive"
         icon="mdi-sync mdi-rotate-270"
         avatar-color="black"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="400px"
         :to="{ name: 'Home' }"
       />
       <base-feature-alt
-        indented
         rounded
-        heading="Awesome Sliders"
+        title="Awesome Sliders"
         icon="mdi-cog"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        max-width="400px"
         :to="{ name: 'Home' }"
       />
     </v-row>
@@ -230,14 +250,14 @@
       class="pt-12"
     >
       <base-feature-card
-        class="mx-3"
+        class="mx-3 mt-12"
         icon="mdi-auto-fix"
         heading="Friendly Support"
         body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
         :to="{ name: 'Home' }"
       />
       <base-feature-card
-        class="mx-3"
+        class="mx-3 mt-12"
         icon="mdi-recycle"
         heading="Fusion Builder"
         outlined
@@ -246,7 +266,7 @@
         :to="{ name: 'Home' }"
       />
       <base-feature-card
-        class="mx-3"
+        class="mx-3 mt-12"
         icon="mdi-water"
         heading="Unlimited Colors"
         body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
@@ -257,26 +277,26 @@
       <base-feature
         tile
         icon="mdi-auto-fix"
-        heading="Unlimited Colors"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Unlimited Colors"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
       />
       <base-feature
         tile
         icon="mdi-flash"
-        heading="Responsive Design"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Responsive Design"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
       />
       <base-feature
         tile
         icon="mdi-recycle"
-        heading="Awesome Sliders"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Awesome Sliders"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
       />
       <base-feature
         tile
         icon="mdi-water"
-        heading="Unlimited Colors"
-        body="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
+        title="Unlimited Colors"
+        text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."
       />
     </v-row>
     <v-row justify="center">

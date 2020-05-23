@@ -10,8 +10,7 @@
     >
       <v-img
         min-height="300"
-        max-height="300"
-        contain
+        height="100%"
         :src="src"
       >
         <v-fade-transition>

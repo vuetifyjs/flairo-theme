@@ -12,7 +12,7 @@
           <v-responsive
             class="d-flex align-center justify-center"
             height="100%"
-            width="100%"
+            width="99%"
           >
             <v-row align="center">
               <v-col
@@ -33,7 +33,7 @@
                   rounded
                   height="50px"
                   color="white"
-                  class="primary--text font-weight-bold text-none mr-4"
+                  class="primary--text font-weight-bold text-none mr-4 mb-1"
                   v-text="`Purchase ${appData.title}`"
                 />
                 <base-btn
@@ -41,7 +41,7 @@
                   rounded
                   height="50px"
                   color="white"
-                  class="font-weight-bold text-none mr-4"
+                  class="font-weight-bold text-none mr-4 mb-1"
                   v-text="`Purchase ${appData.title}`"
                 />
               </v-col>

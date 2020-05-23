@@ -8,10 +8,11 @@
         class="font-weight-bold"
         title="30+ reuseable components!"
         align="center"
+        space="0"
       />
       <base-btn
         rounded
-        class="my-10 elevation-0"
+        class="mt-10 mb-2 elevation-0"
         color="white primary--text"
         depressed
       >

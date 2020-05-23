@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <system-bar />
+    <system-bar v-if="$vuetify.breakpoint.mdAndUp" />
     <app-bar
       block
       search

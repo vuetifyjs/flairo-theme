@@ -3,17 +3,21 @@
     size="270"
     :style="styles"
   >
-    <div :class="`${color}--text`">
-      <span
-        class="font-weight-bold display-3"
+    <div
+      :class="`${color}--text`"
+    >
+      <base-heading
+        space="2"
+        align="center"
         v-text="number"
       />
-      <v-divider
-        class="my-3 mx-auto"
-        style="width: 50px"
+      <base-divider
+        color="primary"
       />
-      <span
+      <base-body
         class="text-uppercase headline"
+        align="center"
+        space="2"
         v-text="text"
       />
     </div>
@@ -45,8 +49,9 @@
       styles () {
         const isDark = this.$vuetify.theme.isDark
         const namedColor = this.$vuetify.theme.themes[isDark ? 'dark' : 'light'][this.color]
+        const mobile = this.$vuetify.breakpoint.mobile
         return {
-          border: this.outlined ? `2px ${namedColor ?? this.color} solid !important` : 'unset',
+          border: this.outlined && !mobile ? `2px ${namedColor ?? this.color} solid !important` : 'unset',
         }
       },
     },

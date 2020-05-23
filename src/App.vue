@@ -1,9 +1,13 @@
 <template>
-  <v-fade-transition mode="out-in">
-    <router-view />
-  </v-fade-transition>
+  <router-view />
 </template>
 
 <script>
   export default { name: 'App' }
 </script>
+
+<style lang="scss">
+html {
+  overflow-x: hidden;
+}
+</style>

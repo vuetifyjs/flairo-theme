@@ -4,9 +4,10 @@
     elevate-on-scroll
     style="right: 0"
     :color="color || 'white'"
-    height="150px"
+    :height="$vuetify.breakpoint.mdAndUp ? '150px' : '60px'"
   >
     <v-img
+      class="hidden-sm-and-down"
       :max-width="$vuetify.breakpoint.mdAndUp ? '200px' : '100px'"
       max-height="120px"
       min-height="120px"
@@ -21,7 +22,7 @@
       />
     </v-toolbar-title>
     <v-spacer />
-    <div>
+    <div v-if="$vuetify.breakpoint.mdAndUp">
       <v-tabs
         hide-slider
         optional
@@ -47,46 +48,73 @@
             v-text="item.icon"
           />
         </v-tab>
-        <v-menu
-          bottom
-          left
-          offset-y
-          content-class="elevation-0"
-          :close-on-content-click="false"
-        >
-          <template #activator="{ on }">
-            <v-tab
-              :value="undefined"
-              active-class="offblack--text"
-              v-on="on"
-            >
-              <v-icon
-                v-if="search"
-                v-text="'mdi-magnify'"
-              />
-            </v-tab>
-          </template>
-          <v-card
-            tile
-            width="1200"
-          >
-            <v-text-field
-              v-model.trim="searchValue"
-              full-width
-              background-color="black"
-              dark
-              solo
-              hide-details
-              height="100px"
-              class="elevation-0"
-              single-line
-              placeholder="Enter your search..."
-              style="font-size: 24px"
-              @keyup.enter="onSearch"
-            />
-          </v-card>
-        </v-menu>
       </v-tabs>
+    </div>
+    <div v-else>
+      <v-btn
+        icon
+        @click="drawer = true"
+      >
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+      <v-navigation-drawer
+        v-model="drawer"
+        app
+        hide-overlay
+        absolute
+        right
+      >
+        <v-list
+          nav
+          dense
+        >
+          <v-list-item-group
+            active-class="primary--text text--accent-4"
+          >
+            <v-list-item
+              v-for="item in items"
+              :key="item.name"
+              :to="{ name: item.name }"
+              :exact="item.name === 'Home'"
+              :ripple="false"
+            >
+              <v-list-item-icon><v-icon v-text="item.icon" /></v-list-item-icon>
+              <v-list-item-title v-text="item.name" />
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+        <template #append>
+          <v-btn
+            text
+            :ripple="false"
+            :href="`tel:${appData.contact.phone.value}`"
+          >
+            <v-icon
+              class="mr-2"
+              v-text="appData.contact.phone.icon"
+            />
+            <span
+              v-text="appData.contact.phone.value"
+            />
+          </v-btn>
+
+          <v-btn
+            text
+            tile
+            height="60px"
+            :ripple="false"
+            :href="`mailto:${appData.contact.email.value}`"
+          >
+            <v-icon
+              class="mr-2"
+              v-text="appData.contact.email.icon"
+            />
+            <span
+              v-text="appData.contact.email.value"
+            />
+          </v-btn>
+        </template>
+      </v-navigation-drawer>
     </div>
   </v-app-bar>
 </template>
@@ -103,7 +131,7 @@
 
     data () {
       return {
-        searchValue: '',
+        drawer: false,
         items: [
           { name: 'Home', icon: 'mdi-home' },
           { name: 'About', icon: 'mdi-account-group' },
@@ -120,12 +148,6 @@
         const attrs = {}
         if (this.block) attrs.height = '150px'
         return attrs
-      },
-    },
-
-    methods: {
-      onSearch () {
-        console.warn(`Search Not Implemented: search on: ${this.searchValue}`)
       },
     },
   }

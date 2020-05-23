@@ -85,10 +85,6 @@
         type: String,
         default: 'primary',
       },
-      indented: {
-        type: Boolean,
-        default: false,
-      },
       outlined: Boolean,
       outlineColor: String,
       to: {

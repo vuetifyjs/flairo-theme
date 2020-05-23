@@ -12,18 +12,19 @@
         md="6"
       >
         <v-img
-          min-height="500px"
-          height="500px"
-          min-width="600px"
+          :min-height="$vuetify.breakpoint.mdAndUp ? '500px' : '200px'"
+          :height="$vuetify.breakpoint.mdAndUp ? '500px' : '200px'"
+          :min-width="$vuetify.breakpoint.mdAndUp ? '600px' : '300px'"
           :src="require('@/assets/about/clay-banks-LjqARJaJotc-unsplash.jpg')"
         />
       </v-col>
       <v-col
         cols="12"
         md="6"
+        class="px-10"
       >
         <base-heading
-          class="font-weight-bold"
+          class="font-weight-bold py-3"
           title="Our Values"
           align="left"
         />

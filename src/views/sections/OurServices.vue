@@ -15,7 +15,7 @@
     </div>
     <v-row
       justify="center"
-      align="center"
+      align="stretch"
       class="px-10"
     >
       <template v-for="(feature, i) in features">
@@ -45,14 +45,12 @@
             icon: 'mdi-flash',
             title: 'Fast Loads',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
           {
             icon: 'mdi-cog',
             outlined: true,
             title: 'Customizable Sections',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
           {
             icon: 'mdi-responsive',
@@ -60,13 +58,11 @@
             outlined: true,
             title: 'Responsive',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
           {
             icon: 'mdi-face-agent',
             title: 'Friendly Support',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
           {
             icon: 'mdi-auto-fix',
@@ -74,26 +70,22 @@
             avatarColor: '#0077b5',
             outlined: true,
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
           {
             icon: 'mdi-calendar',
             title: 'Flexible Schedule',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
           {
             icon: 'mdi-magnify',
             title: 'Search Engine Optimization',
             avatarColor: '#0077b5',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
           {
             icon: 'mdi-thought-bubble',
             title: 'Versatile Content Support',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
-            indented: true,
           },
         ],
       }

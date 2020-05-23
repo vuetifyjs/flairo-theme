@@ -8,7 +8,7 @@
         justify="center"
       >
         <v-col
-          cols="6"
+          cols="12"
           md="3"
           class="px-3"
         >
@@ -21,8 +21,8 @@
           <base-body text="Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo." />
         </v-col>
         <v-col
-          cols="6"
-          md="3"
+          v-if="$vuetify.breakpoint.mdAndUp"
+          cols="3"
           class="px-3"
         >
           <base-subheading title="Recent News" />
@@ -42,8 +42,8 @@
           </template>
         </v-col>
         <v-col
-          cols="6"
-          md="3"
+          v-if="$vuetify.breakpoint.mdAndUp"
+          cols="3"
           class="px-3"
         >
           <base-subheading title="Recent Posts" />
@@ -87,7 +87,7 @@
           </template>
         </v-col>
         <v-col
-          cols="6"
+          cols="12"
           md="3"
           class="px-3"
         >

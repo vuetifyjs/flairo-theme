@@ -25,7 +25,8 @@
       <template v-for="(employee, i) in teamMembers">
         <v-col
           :key="i"
-          cols="6"
+          cols="12"
+          sm="6"
           md="3"
         >
           <base-team-member
@@ -43,10 +44,6 @@
     name: 'SectionOurTeam',
     data () {
       return {
-        // Note: If you want to use local images in src/assets/, you will need to replace
-        //   src: 'https://sample.com',
-        // with
-        //   src: require('@/assets/name-of-file.jpg'),
         teamMembers: [
           {
             title: 'CEO',
@@ -56,7 +53,7 @@
               { link: 'https://twitter.com', icon: 'mdi-twitter' },
               { link: 'mailto:sample@example.com', icon: 'mdi-email' },
             ],
-            src: 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairSides&accessoriesType=Round&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Red&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=DarkBrown',
+            src: require('@/assets/team/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg'),
           },
           {
             title: 'COO',
@@ -66,7 +63,7 @@
               { link: 'https://twitter.com', icon: 'mdi-twitter' },
               { link: 'mailto:sample@example.com', icon: 'mdi-email' },
             ],
-            src: 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Brown',
+            src: require('@/assets/team/christopher-campbell-rDEOVtE7vOs-unsplash.jpg'),
           },
           {
             title: 'CTO',
@@ -76,7 +73,7 @@
               { link: 'https://twitter.com', icon: 'mdi-twitter' },
               { link: 'mailto:sample@example.com', icon: 'mdi-email' },
             ],
-            src: 'https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Heather&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=Tanned',
+            src: require('@/assets/team/dan-ROJFuWCsfmA-unsplash.jpg'),
           },
           {
             title: 'CFO',
@@ -86,7 +83,7 @@
               { link: 'https://twitter.com', icon: 'mdi-twitter' },
               { link: 'mailto:sample@example.com', icon: 'mdi-email' },
             ],
-            src: 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairFrizzle&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerShirt&eyeType=Wink&eyebrowType=DefaultNatural&mouthType=Tongue&skinColor=Light',
+            src: require('@/assets/team/ethan-hoover-0YHIlxeCuhg-unsplash.jpg'),
           },
         ],
       }

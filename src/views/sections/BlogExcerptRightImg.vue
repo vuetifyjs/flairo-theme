@@ -4,14 +4,20 @@
     space="5"
   >
     <v-row>
-      <v-col cols="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <base-body
           v-for="(text, i) in texts"
           :key="i"
           :text="text"
         />
       </v-col>
-      <v-col cols="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <v-img
           :src="require('@/assets/instagram/lukasz-szmigiel-dAgtO5H8cXg-unsplash.jpg')"
           height="400px"

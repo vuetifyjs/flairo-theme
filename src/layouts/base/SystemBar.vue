@@ -15,11 +15,14 @@
       :href="`tel:${appData.contact.phone.value}`"
     >
       <v-icon
-        left
+        :left="$vuetify.breakpoint.mdAndUp"
         class="mr-2"
         v-text="appData.contact.phone.icon"
       />
-      <span v-text="appData.contact.phone.value" />
+      <span
+        class="hidden-sm-and-down"
+        v-text="appData.contact.phone.value"
+      />
     </v-btn>
 
     <v-btn
@@ -31,13 +34,16 @@
       :href="`mailto:${appData.contact.email.value}`"
     >
       <v-icon
-        left
+        :left="$vuetify.breakpoint.mdAndUp"
         class="mr-2"
         v-text="appData.contact.email.icon"
       />
-      <span v-text="appData.contact.email.value" />
+      <span
+        class="hidden-sm-and-down"
+        v-text="appData.contact.email.value"
+      />
     </v-btn>
-    <v-spacer />
+    <v-spacer v-if="$vuetify.breakpoint.mdAndUp" />
     <template v-if="$vuetify.breakpoint.mdAndUp">
       <v-btn
         v-for="site in appData.socialLinks"

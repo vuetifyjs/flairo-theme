@@ -1,5 +1,8 @@
 <template>
-  <v-card flat>
+  <v-card
+    flat
+    v-bind="$attrs"
+  >
     <v-card-text>
       <v-row justify="center">
         <base-avatar
@@ -10,9 +13,8 @@
           :outline-color="outlineColor"
         />
       </v-row>
-      <v-row
-        justify="center"
-        align="center"
+      <div
+        class="text-center flex-column"
       >
         <base-subheading
           class="title primary--text mt-4"
@@ -24,7 +26,7 @@
           :text="text"
           align="center"
         />
-      </v-row>
+      </div>
     </v-card-text>
   </v-card>
 </template>
