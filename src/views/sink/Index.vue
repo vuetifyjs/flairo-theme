@@ -102,7 +102,7 @@
           title="CEO"
           name="Neil Barnett"
           :social-links="teamSocialLinks"
-          :src="require('@/assets/team/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg')"
+          :src="require('@/assets/team/rana-sawalha-IhuHLIxS_Tk-unsplash.jpg')"
         />
       </v-col>
       <v-col
@@ -138,7 +138,7 @@
           title="CFO"
           name="Wesley Graves"
           :social-links="teamSocialLinks"
-          :src="require('@/assets/team/ethan-hoover-0YHIlxeCuhg-unsplash.jpg')"
+          :src="require('@/assets/team/brooke-cagle-wKOKidNT14w-unsplash.jpg')"
         />
       </v-col>
     </v-row>

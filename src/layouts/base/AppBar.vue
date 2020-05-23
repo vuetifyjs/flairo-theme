@@ -57,64 +57,17 @@
       >
         <v-icon>mdi-menu</v-icon>
       </v-btn>
-      <v-navigation-drawer
-        v-model="drawer"
-        app
-        hide-overlay
-        absolute
-        right
-      >
-        <v-list
-          nav
-          dense
-        >
-          <v-list-item-group
-            active-class="primary--text text--accent-4"
-          >
-            <v-list-item
-              v-for="item in items"
-              :key="item.name"
-              :to="{ name: item.name }"
-              :exact="item.name === 'Home'"
-              :ripple="false"
-            >
-              <v-list-item-icon><v-icon v-text="item.icon" /></v-list-item-icon>
-              <v-list-item-title v-text="item.name" />
-            </v-list-item>
-          </v-list-item-group>
-        </v-list>
-        <template #append>
-          <v-btn
-            text
-            :ripple="false"
-            :href="`tel:${appData.contact.phone.value}`"
-          >
-            <v-icon
-              class="mr-2"
-              v-text="appData.contact.phone.icon"
-            />
-            <span
-              v-text="appData.contact.phone.value"
-            />
-          </v-btn>
-
-          <v-btn
-            text
-            tile
-            height="60px"
-            :ripple="false"
-            :href="`mailto:${appData.contact.email.value}`"
-          >
-            <v-icon
-              class="mr-2"
-              v-text="appData.contact.email.icon"
-            />
-            <span
-              v-text="appData.contact.email.value"
-            />
-          </v-btn>
-        </template>
-      </v-navigation-drawer>
+      <blog-sidebar
+        v-if="$route.name === 'Blog'"
+        :value="drawer"
+        @input="drawer = $event"
+      />
+      <base-sidebar
+        v-else
+        :items="items"
+        :value="drawer"
+        @input="drawer = $event"
+      />
     </div>
   </v-app-bar>
 </template>
@@ -122,6 +75,11 @@
 <script>
   export default {
     name: 'BaseAppBar',
+
+    components: {
+      BlogSidebar: () => import('@/layouts/base/BlogSidebar'),
+      BaseSidebar: () => import('@/layouts/base/BaseSidebar'),
+    },
 
     props: {
       block: Boolean,
@@ -148,6 +106,12 @@
         const attrs = {}
         if (this.block) attrs.height = '150px'
         return attrs
+      },
+    },
+
+    watch: {
+      '$route.name' (val) {
+        this.drawer = false
       },
     },
   }

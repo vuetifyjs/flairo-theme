@@ -10,7 +10,7 @@
       />
     </v-col>
     <v-col class="pl-2">
-      <base-subheading
+      <base-title
         :title="post.title"
         size="title"
         class="primary--text"

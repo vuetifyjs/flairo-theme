@@ -53,7 +53,7 @@
               { link: 'https://twitter.com', icon: 'mdi-twitter' },
               { link: 'mailto:sample@example.com', icon: 'mdi-email' },
             ],
-            src: require('@/assets/team/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg'),
+            src: require('@/assets/team/rana-sawalha-IhuHLIxS_Tk-unsplash.jpg'),
           },
           {
             title: 'COO',
@@ -83,7 +83,7 @@
               { link: 'https://twitter.com', icon: 'mdi-twitter' },
               { link: 'mailto:sample@example.com', icon: 'mdi-email' },
             ],
-            src: require('@/assets/team/ethan-hoover-0YHIlxeCuhg-unsplash.jpg'),
+            src: require('@/assets/team/brooke-cagle-wKOKidNT14w-unsplash.jpg'),
           },
         ],
       }

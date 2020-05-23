@@ -1,17 +1,23 @@
 <template>
   <v-navigation-drawer
-    v-model="navOpen"
+    :value="value"
     width="400px"
-    height="100%"
     class="py-5 pl-3"
     app
-    fixed
     absolute
     clipped
     floating
     right
+    @input="$emit('input', $event)"
   >
     <template #prepend>
+      <v-btn
+        style="position:absolute;right:16px;top:12px"
+        icon
+        @click="$emit('input', false)"
+      >
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
       <base-title title="Search" />
       <base-divider align="left" />
       <base-text-field
@@ -154,9 +160,13 @@
       BlogTweet: () => import('@/components/blog/Tweet'),
     },
 
+    props: {
+      value: { type: Boolean, default: false },
+    },
+
     data () {
       return {
-        navOpen: true,
+        navOpen: false,
         search: '',
         categories: [
           { name: 'Daytime', count: 9 },

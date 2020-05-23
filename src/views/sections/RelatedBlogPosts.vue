@@ -11,7 +11,8 @@
       <template v-for="post in appData.relatedPosts">
         <v-col
           :key="post.id"
-          cols="6"
+          cols="12"
+          sm="6"
           md="4"
           class="px-1"
         >
