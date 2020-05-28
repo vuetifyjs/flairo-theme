@@ -15,6 +15,8 @@
         class="mt-10 mb-2 elevation-0"
         color="white primary--text"
         depressed
+        href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+        target="_blank"
       >
         <span
           class="font-weight-black text-none"

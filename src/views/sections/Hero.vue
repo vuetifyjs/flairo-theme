@@ -34,16 +34,22 @@
                   height="50px"
                   color="white"
                   class="primary--text font-weight-bold text-none mr-4 mb-1"
-                  v-text="`Purchase ${appData.title}`"
-                />
+                  href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+                  target="_blank"
+                >
+                  <span v-text="`Purchase ${appData.title}`" />
+                </base-btn>
                 <base-btn
                   outlined
                   rounded
                   height="50px"
                   color="white"
                   class="font-weight-bold text-none mr-4 mb-1"
-                  v-text="`Purchase ${appData.title}`"
-                />
+                  href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+                  target="_blank"
+                >
+                  <span v-text="`Purchase ${appData.title}`" />
+                </base-btn>
               </v-col>
               <v-col
                 cols="12"

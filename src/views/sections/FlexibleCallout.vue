@@ -17,6 +17,8 @@
         rounded
         color="offblack"
         dark
+        href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+        target="_blank"
       >
         <span
           class="font-weight-medium text-none"

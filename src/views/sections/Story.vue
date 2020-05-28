@@ -28,6 +28,8 @@
           color="black"
           dark
           depressed
+          href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+          target="_blank"
         >
           <span
             class="font-weight-black text-none"
