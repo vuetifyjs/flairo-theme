@@ -58,33 +58,27 @@
           align="left"
         />
         <template v-for="(post, i) in appData.recentPosts" :key="`post-row-${i}`">
-          <v-row >
-            <v-col
-              v-if="mdAndUp"
-              cols="3"
-            >
+          <div class="d-flex">
+            <div>
               <Avatar
-                :key="`post-date-${i}`"
-                color="primary"
-                outlined
-                size="60"
-                class="ma-2"
-                :text="post.date"
-              />
-            </v-col>
-            <v-col
-              cols="12"
-              md="9"
-            >
-              <Body
-                :key="`post-text-${i}`"
-                tag="span"
-                space="0"
-                class="py-3"
-                :text="post.text"
-              />
-            </v-col>
-          </v-row>
+              v-if="mdAndUp"
+              :key="`post-date-${i}`"
+              color="primary"
+              outlined
+              size="60"
+              class="ma-2"
+              :text="post.date"
+            />
+            </div>
+            
+            <Body
+              :key="`post-text-${i}`"
+              tag="span"
+              space="0"
+              class="py-3"
+              :text="post.text"
+            />
+          </div>
           <v-divider
             color="grey"
             max-width="100%"
