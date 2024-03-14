@@ -1,0 +1,61 @@
+<script setup lang="ts">
+  import { useAppData } from '@/stores/mockup';
+
+  const appData = useAppData();
+  const tab = ref('all');
+  const tabs = ref([
+    { title: 'All Works', category: 'all' },
+    { title: 'Campfire', category: 'fire' },
+    { title: 'Mountain', category: 'mountain' },
+    { title: 'Daylight', category: 'day' },
+    { title: 'Overnight', category: 'night' },    
+  ])
+  const visibleProjects = computed(() => {
+    const projects = appData.projects.filter(project => {
+      if (typeof tab.value === 'number' && (tab.value === 0 || project.category.toLowerCase() === tabs.value[tab.value].category.toLowerCase())) return true
+      if (typeof tab.value === 'string' && (tab.value.toLowerCase() === 'all' || project.category.toLowerCase() === tab.value.toLowerCase())) return true
+    });
+    return projects;
+  })
+</script>
+
+<template>
+  <Section
+    id="gallery"
+    space="16"
+  >
+    <div class="justify-center align-center">
+      <v-tabs
+        v-model="tab"
+        align-tabs="center"
+      >
+        <v-tab
+          v-for="t in tabs"
+          :key="t.category"
+          :href="`#${t.category.toLowerCase()}`"
+        > {{ t.title }} </v-tab>
+      </v-tabs>
+    </div>
+    <v-row
+      justify="center"
+      align="center"
+      no-gutters
+    >
+      <template v-for="(project, _i) in visibleProjects" :key="_i">
+        <v-col
+          class="pa-2"
+          cols="12"
+          sm="6"
+          md="4"
+          lg="3"
+        >
+          <Project v-bind="project" />
+        </v-col>
+      </template>
+    </v-row>
+  </Section>
+</template>
+
+<style lang="scss" scoped>
+
+</style>

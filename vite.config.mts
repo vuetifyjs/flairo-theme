@@ -46,10 +46,16 @@ export default defineConfig({
     }),
     Fonts({
       google: {
-        families: [ {
-          name: 'Roboto',
-          styles: 'wght@100;300;400;500;700;900',
-        }],
+        families: [
+          {
+            name: 'Open Sans',
+            styles: 'wght@100;300;400;500;700;900',
+          },
+          {
+            name: 'Lato',
+            styles: 'wght@100;300;400;500;700;900',
+          }
+        ],
       },
     }),
   ],
@@ -57,6 +63,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@base': fileURLToPath(new URL('./src/components/base', import.meta.url)),
+      '@blog': fileURLToPath(new URL('./src/components/blog', import.meta.url)),
     },
     extensions: [
       '.js',
@@ -70,5 +78,11 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+  },
+  optimizeDeps: {
+    exclude: ['vuetify'],
+    entries: [
+      './src/**/*.vue',
+    ],
   },
 })
