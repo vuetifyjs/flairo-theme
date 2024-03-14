@@ -26,7 +26,7 @@
     mobileBreakPoint: 768,
     tag: 'h1',
     weight: 'black',
-    color: 'primary'
+    color: 'black'
   })
 
   const fontSize = () => {

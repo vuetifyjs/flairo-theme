@@ -12,7 +12,6 @@
     <div class="justify-center align-center text-center">
       <Heading
         class="font-weight-bold"
-        color="white"
         title="30+ reuseable components!"
         align="center"
         space="0"

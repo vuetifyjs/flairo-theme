@@ -10,6 +10,7 @@
     mobileBreakPoint?: number | string
     tag?: string
     title?: string
+    color?: string
   }
 
   const props = withDefaults(defineProps<Props>(), {
