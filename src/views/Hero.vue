@@ -32,9 +32,11 @@
                 <Heading
                   class="text-uppercase font-weight-bold"
                   :title="`Why ${appData.title}?`"
+                  color="white"
                 />
                 <Subheading
                   title="Awesome, Clean & Unique"
+                  color="white"
                 />
                 <Body
                   text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mauris non venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
