@@ -43,7 +43,6 @@
     >
       <template v-for="(project, _i) in visibleProjects" :key="_i">
         <v-col
-          class="pa-2"
           cols="12"
           sm="6"
           md="4"

@@ -33,7 +33,6 @@
       <template v-for="(project, _i) in shuffledProjects" :key="_i">
         <v-col
           cols="12"
-          class="pa-2"
           sm="6"
           md="4"
           lg="3"
