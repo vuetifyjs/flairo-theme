@@ -42,7 +42,6 @@
 <template>
   <v-app-bar
     scroll-behavior="elevate"
-    elevation="4"
     style="right: 0;"
     :color="color || 'white'"
     :height="mdAndUp ? '150px' : '60px'"
