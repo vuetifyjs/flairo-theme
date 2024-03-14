@@ -32,33 +32,30 @@
           :src="src"
           cover
         >
-          <v-fade-transition>
-            <div 
-              v-if="isHovering"
-              class="d-flex transition-fast-in-fast-out v-card--reveal text-white grey lighten-3"
-              style="height: 100%; opacity: .8"
+          <v-overlay
+            :model-value="isHovering"
+            class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center text-offblock"
+            style="opacity: .8;"
+            scrim="grey-lighten-5"
+            contained
+          >
+            <v-btn
+              v-for="site in socialLinks"
+              :key="site.link"
+              :href="site.link"
+              target="_blank"
+              class="mx-2"
+              size="50"
+              variant="outlined"
+              rounded
             >
-              <v-row
-                justify="center"
-                align="center"
-              >
-                <v-btn
-                  v-for="site in socialLinks"
-                  :key="site.link"
-                  :href="site.link"
-                  target="_blank"
-                  class="mx-1"
-                  variant="outlined"
-                  rounded
-                  size='x-large'
-                >
-                  <v-icon
-                    size='x-large'
-                  >{{ site.icon }}</v-icon>
-                </v-btn>
-              </v-row>
-            </div>
-          </v-fade-transition>
+              <v-icon
+                size='40'
+                class="mx-0"
+                :icon="site.icon"
+              />
+            </v-btn>
+          </v-overlay>
         </v-img>
         <v-card-text
           class="pt-3"
