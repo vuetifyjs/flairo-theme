@@ -73,7 +73,7 @@
         <v-tab
           v-for="item in items"
           :key="item.name"
-          :to="item.name === 'Home'? '/' : item.name"
+          :to="item.name === 'Home'? '/' : item.name.toLowerCase()"
           :exact="item.name === 'Home'"
           :ripple="false"
           selected-class="text-primary"
