@@ -1,4 +1,4 @@
-<script setup lang="ts">  
+<script setup lang="ts">
   import NotFoundImg from '@/assets/not-found.svg'
 </script>
 
@@ -6,8 +6,8 @@
   <Section id="not-found" space="4">
     <v-img
       :src="NotFoundImg"
-      min-height="500px"
       max-height="500px"
+      min-height="500px"
     >
       <v-theme-provider>
         <v-container class="fill-height px-5 py-12">
@@ -17,8 +17,8 @@
             width="100%"
           >
             <Heading
-              class="text-uppercase font-weight-bold pb-12"
               align="center"
+              class="text-uppercase font-weight-bold pb-12"
               title="That page doesn't exist"
             />
           </v-responsive>

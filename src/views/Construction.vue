@@ -6,8 +6,8 @@
   <Section id="construction" space="2">
     <v-img
       :src="UnderConsturctionImg"
-      min-height="500px"
       max-height="500px"
+      min-height="500px"
     >
       <v-theme-provider>
         <v-container class="fill-height px-5 py-12">
@@ -17,8 +17,8 @@
             width="100%"
           >
             <Heading
-              class="text-uppercase font-weight-bold pb-12"
               align="center"
+              class="text-uppercase font-weight-bold pb-12"
               title="Under Construction"
             />
           </v-responsive>

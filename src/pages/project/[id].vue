@@ -1,14 +1,14 @@
 <script setup lang="ts">
-  import ProjectDetail from '@/views/ProjectDetail.vue';
-  import ProjectGalleryAlt from '@/views/ProjectGalleryAlt.vue';
-  import Info from '@/views/Info.vue';
+  import ProjectDetail from '@/views/ProjectDetail.vue'
+  import ProjectGalleryAlt from '@/views/ProjectGalleryAlt.vue'
+  import Info from '@/views/Info.vue'
 
   interface Props {
     id?: string
   }
 
   withDefaults(defineProps<Props>(), {
-    id: 'portfolio-detail'
+    id: 'portfolio-detail',
   })
 </script>
 

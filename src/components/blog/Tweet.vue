@@ -9,7 +9,7 @@
   }
 
   withDefaults(defineProps<Props>(), {
-    clamp: 0
+    clamp: 0,
   })
 </script>
 
@@ -18,26 +18,26 @@
     <v-col class="shrink">
       <Avatar
         :key="`tweet-date`"
+        class="ma-2"
+        color="surface-light"
         icon="mdi-twitter"
         icon-color="#1A91DA"
-        color="grey lighten-3"
-        tile
         size="100"
-        class="ma-2"
+        tile
       />
     </v-col>
     <v-col class="pl-2 py-2">
       <Subheading
         :title="tweet.author"
-        size="title"
         class="primary--text"
+        size="title"
         space="0"
       />
       <Body
         :key="`tweet-text`"
-        space="0"
         :clamp="3"
         :text="tweet.text"
+        space="0"
       />
       <div
         v-if="tweet.date"

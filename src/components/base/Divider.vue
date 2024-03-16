@@ -9,8 +9,8 @@
 
   const props = withDefaults(defineProps<Props>(), {
     maxWidth: 28,
-    space : 6
-  });
+    space: 6,
+  })
 
   const margin = () => {
     switch (props.align) {
@@ -27,8 +27,8 @@
       `mb-${props.space}`,
       props.dense && 'base-divider--dense',
     ]
-  });
-  
+  })
+
 </script>
 
 <template>
@@ -38,11 +38,9 @@
     class="base-divider"
     v-bind="$attrs"
   >
-    <v-divider :color="props.color" class="border-opacity-100" />
+    <v-divider :color="props.color" class="border-opacity-50" />
   </v-responsive>
 </template>
-
-
 
 <style lang="sass">
   .base-divider .v-divider

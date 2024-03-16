@@ -1,4 +1,4 @@
-<script setup lang="ts">  
+<script setup lang="ts">
   import LukaszSzmigielAvatar from '@/assets/instagram/lukasz-szmigiel-dAgtO5H8cXg-unsplash.jpg'
   const texts = ref([
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tincidunt diam, eu ultricies felis. Sed pretium fringilla volutpat. Vestibulum vel justo a sapien tempus pretium ut nec mi. Duis ut turpis sodales, fermentum massa vel, laoreet nibh. Aliquam maximus finibus orci. Suspendisse potenti. Vestibulum pulvinar sapien egestas nulla efficitur vestibulum. Aenean tortor tortor, placerat eget lorem nec, ultrices consequat lacus. Mauris lacinia suscipit lacus, tempus laoreet nulla pellentesque vel. Vivamus at urna ultricies, elementum felis vel, tincidunt felis. Pellentesque vitae neque pellentesque odio aliquet iaculis. Aenean pretium dolor arcu, luctus bibendum leo porta quis. In imperdiet sapien ut maximus mattis.',

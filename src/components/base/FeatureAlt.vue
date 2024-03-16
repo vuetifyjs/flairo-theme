@@ -17,7 +17,7 @@
     tile: false,
     avatarColor: 'primary',
     text: '',
-    size: 'text-h4'
+    size: 'text-h4',
   })
 </script>
 
@@ -32,28 +32,28 @@
         align="start"
         justify="center"
       >
-        <v-col cols="4" class="my-1">
+        <v-col class="my-1" cols="4">
           <Avatar
-            class="mr-6"
-            :tile="tile"
-            :rounded="rounded"
-            :icon="icon"
-            size="70"
-            icon-size="25"
             :color="avatarColor"
-            :outlined="outlined"
+            :icon="icon"
             :outline-color="outlineColor"
+            :outlined="outlined"
+            :rounded="rounded"
+            :tile="tile"
+            class="mr-6"
+            icon-size="25"
+            size="70"
           />
         </v-col>
         <v-col
-          cols="8"
           class="text-left"
+          cols="8"
         >
           <Title
-            class="primary--text"
-            space="2"
             :size="size"
             :title="title"
+            class="primary--text"
+            space="2"
           />
           <Body
             :text="text"
@@ -61,15 +61,15 @@
           />
           <RouterLink
             v-if="to"
-            class="link"
             :to="to"
+            class="link"
           > Read More </RouterLink>
           <v-icon
             v-if="to"
             color="primary"
+            icon="mdi-chevron-right"
             right
             small
-            icon="mdi-chevron-right"
           />
         </v-col>
       </v-row>

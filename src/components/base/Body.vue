@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { useTheme } from 'vuetify';
-  
-  const theme = useTheme();
+  import { useTheme } from 'vuetify'
+
+  const theme = useTheme()
 
   interface Props {
     html?: string
@@ -18,8 +18,8 @@
     space: 10,
     tag: 'p',
     align: 'left',
-    clamp: 'none'
-  });
+    clamp: 'none',
+  })
 
   const classes = computed(() => {
     return [
@@ -28,11 +28,11 @@
       `text-${props.align}`,
       `mb-${props.space}`,
     ]
-  });
+  })
 
-  const styles = computed( () => {
+  const styles = computed(() => {
     return { maxWidth: `${props.maxWidth}px` }
-  } );
+  })
 
   const textStyles = computed(() => {
     return props.clamp === 'none' ? {} : {
@@ -41,7 +41,7 @@
       '-webkit-box-orient': 'vertical',
       overflow: 'hidden',
     }
-  });
+  })
 </script>
 
 <template>
@@ -53,7 +53,7 @@
     v-bind="$attrs"
   >
     <!-- Only use v-html for user data -->
-    
+
     <div
       v-if="text"
       :style="(textStyles as any)"

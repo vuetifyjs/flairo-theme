@@ -10,25 +10,25 @@
 
   withDefaults(defineProps<Props>(), {
     // @ts-ignore
-    features: () => {return [];},
-    size: 'text-h3'
+    features: () => { return [] },
+    size: 'text-h3',
   })
 </script>
 
 <template>
   <v-card
+    color="#f5e5d7"
     width="352px"
     outlined
-    color="#f5e5d7"
   >
     <v-row
       class="ma-8 flex-column"
     >
       <Title
-        :title="title"
         :size="size"
-        class="text-uppercase"
+        :title="title"
         align="center"
+        class="text-uppercase"
       />
       <Subtitle
         :title="subtitle"
@@ -40,8 +40,8 @@
       />
       <Body
         :text="`/${frequency}`"
-        class="font-weight-medium"
         align="center"
+        class="font-weight-medium"
         space="0"
       />
     </v-row>
@@ -53,9 +53,9 @@
       no-gutters
     >
       <Body
+        :text="feature"
         class="mx-auto pa-5"
         space="0"
-        :text="feature"
       />
       <v-divider />
     </v-row>

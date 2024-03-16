@@ -1,32 +1,31 @@
-
-<script setup lang="ts">  interface Props {
+<script setup lang="ts"> interface Props {
     width? : number | string
     skill: string
     value: number | string
   }
 
   withDefaults(defineProps<Props>(), {
-    width: '100%'
+    width: '100%',
   })
 </script>
 
 <template>
   <div :style="{ width }">
     <v-row
+      class="my-2"
       justify="space-between"
       no-gutters
-      class="my-2"
     >
       <span v-text="skill" />
       <span v-text="`${value}%`" />
     </v-row>
     <v-row
-      no-gutters
       class="my-2"
+      no-gutters
     >
       <v-progress-linear
-        height="20"
         :model-value="value"
+        height="20"
         v-bind="$attrs"
       />
     </v-row>

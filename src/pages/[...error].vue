@@ -1,11 +1,11 @@
 <script setup lang="ts">
-  import NotFound from '@/views/NotFound.vue';
+  import NotFound from '@/views/NotFound.vue'
   interface Props {
     id: string
   }
 
   withDefaults(defineProps<Props>(), {
-    id: '404'
+    id: '404',
   })
 </script>
 

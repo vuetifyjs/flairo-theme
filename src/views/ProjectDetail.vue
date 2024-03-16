@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import { useRoute } from 'vue-router';
-  import { useAppData } from '@/stores/mockup';
+  import { useRoute } from 'vue-router'
+  import { useAppData } from '@/stores/mockup'
 
-  const appData = useAppData();
-  const { params } = useRoute();
+  const appData = useAppData()
+  const { params } = useRoute()
   const activeProject = computed(() => {
     const id = params.id
     return appData.projects.find(prj => +prj.id === +id)
@@ -13,7 +13,7 @@
 <template>
   <Section
     id="story-alt"
-    class="grey lighten-4 pb-12"
+    class="bg-surface-light pb-12"
     space="10"
   >
     <v-row
@@ -26,21 +26,21 @@
         md="6"
       >
         <v-img
+          :src="activeProject?.src"
           class="ma-1"
           min-height="500px"
           min-width="50%"
-          :src="activeProject?.src"
         />
       </v-col>
       <v-col
+        class="px-5 py-2"
         cols="12"
         md="6"
-        class="px-5 py-2"
       >
         <Heading
-          class="font-weight-bold"
           :title="activeProject?.title"
           align="left"
+          class="font-weight-bold"
         />
         <Subheading
           :title="activeProject?.subtitle"
@@ -50,8 +50,8 @@
           weight="bold"
         />
         <Body
-          space="2"
           :text="activeProject?.date"
+          space="2"
         />
         <Subtitle
           title="Description"

@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import JamisonMcandieImg from '@/assets/projects/jamison-mcandie-waZEHLRP98s-unsplash.jpg'
-  import { useAppData } from '@/stores/mockup';
+  import { useAppData } from '@/stores/mockup'
 
-  const appData = useAppData();
+  const appData = useAppData()
 </script>
 
 <template>
@@ -18,10 +18,10 @@
     <v-row no-gutters>
       <template v-for="post in appData.relatedPosts" :key="post.id">
         <v-col
-          cols="12"
-          sm="6"
-          md="4"
           class="px-1"
+          cols="12"
+          md="4"
+          sm="6"
         >
           <Card
             :post="post"

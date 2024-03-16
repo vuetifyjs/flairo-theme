@@ -15,7 +15,7 @@
     align: 'center',
     color: 'primary',
     space: 12,
-    size: 64
+    size: 64,
   })
 
   const classes = computed(() => {

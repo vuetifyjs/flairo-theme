@@ -1,30 +1,30 @@
 <script setup lang="ts">
-  import { useAppData } from '@/stores/mockup';
-  import { useDisplay } from 'vuetify';
-  
-  const { mdAndUp } = useDisplay();
-  const appData = useAppData();
+  import { useAppData } from '@/stores/mockup'
+  import { useDisplay } from 'vuetify'
+
+  const { mdAndUp } = useDisplay()
+  const appData = useAppData()
 
 </script>
 
 <template>
   <v-system-bar
-    color="primary"
     :height="60"
     :ripple="false"
+    color="primary"
   >
     <v-btn
+      :href="`tel:${appData.contact.phone.value}`"
+      :ripple="false"
       class="mx-2 text-white"
+      height="60px"
       variant="text"
       tile
-      height="60px"
-      :ripple="false"
-      :href="`tel:${appData.contact.phone.value}`"
     >
       <v-icon
+        :icon="appData.contact.phone.icon"
         :left="mdAndUp"
         class="mr-2"
-        :icon="appData.contact.phone.icon"
       />
       <span
         class="hidden-sm-and-down"
@@ -33,17 +33,17 @@
     </v-btn>
 
     <v-btn
+      :href="`mailto:${appData.contact.email.value}`"
+      :ripple="false"
       class="mx-2 text-white"
+      height="60px"
       variant="text"
       tile
-      height="60px"
-      :ripple="false"
-      :href="`mailto:${appData.contact.email.value}`"
     >
       <v-icon
+        :icon="appData.contact.email.icon"
         :left="mdAndUp"
         class="mr-2"
-        :icon="appData.contact.email.icon"
       />
       <span
         class="hidden-sm-and-down"
@@ -56,17 +56,16 @@
         v-for="site in appData.socialLinks"
         :key="site.name"
         :href="site.link"
-        target="_blank"
         class="mx-2"
+        target="_blank"
         variant="text"
         icon
       >
         <v-icon
-          class="mx-0 text-white"
           :icon="site.icon"
+          class="mx-0 text-white"
         />
       </v-btn>
     </template>
   </v-system-bar>
 </template>
-

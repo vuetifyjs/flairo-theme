@@ -1,9 +1,9 @@
-<script setup lang="ts" >
+<script setup lang="ts">
 
-  import { useDisplay } from 'vuetify';
+  import { useDisplay } from 'vuetify'
 
-  const { width } = useDisplay();
-  
+  const { width } = useDisplay()
+
   interface Props {
     align?: string
     dense?: boolean
@@ -26,7 +26,7 @@
     mobileBreakPoint: 768,
     tag: 'h1',
     weight: 'black',
-    color: 'black'
+    color: 'black',
   })
 
   const fontSize = () => {

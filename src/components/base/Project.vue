@@ -14,49 +14,50 @@
 </script>
 
 <template>
-  <v-hover v-slot:default="{ isHovering, props }">
+  <v-hover v-slot="{ isHovering, props }">
     <v-card
-      max-height="400"
-      width="auto"
       class="px-auto"
+      max-height="400"
       variant="flat"
+      width="auto"
       tile
       v-bind="props"
     >
       <v-img
-        min-height="300"
-        max-height="300"
-        cover
         :src="src"
+        max-height="300"
+        min-height="300"
+        cover
       >
         <v-overlay
-            :model-value="isHovering"
-            class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center text-offblock text-center bg-primary"
-            style="opacity: .8;"
-            contained
+          :model-value="isHovering"
+          class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center text-offblock text-center"
+          opacity="0.8"
+          scrim="primary"
+          contained
+        >
+          <v-btn
+            :to="`/project/${id}`"
+            class="ml-n2 mb-2"
+            size="50"
+            variant="tonal"
+            rounded
           >
-            <v-btn
-              :to="`/project/${id}`"
-              variant="tonal"
-              class="ml-n2 mb-2"
-              rounded
-              size="50"
-            >
-              <v-icon
-                class="mx-0"
-                size="40"
-                icon="mdi-link"
-                color="primary"
-              />
-            </v-btn>
-            <div
-              class="font-weight-black mb-2"
-              v-text="title"
+            <v-icon
+              class="mx-0"
+              color="primary"
+              icon="mdi-link"
+              size="40"
             />
-            <div
-              class="mb-2"
-              v-text="subtitle"
-            />
+          </v-btn>
+          <div
+            class="font-weight-black mb-2"
+            v-text="title"
+          />
+          <div
+            class="mb-2"
+            v-text="subtitle"
+          />
         </v-overlay>
       </v-img>
     </v-card>

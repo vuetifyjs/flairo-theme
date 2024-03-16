@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { useAppData } from '@/stores/mockup'
-  
+
   interface Props {
     drawer?: boolean
     items: {
@@ -11,52 +11,54 @@
 
   withDefaults(defineProps<Props>(), {
     drawer: false,
-    items: () => { return []}
+    items: () => { return [] },
   })
 
-  const appData = useAppData();
+  defineEmits(['input'])
+
+  const appData = useAppData()
 </script>
 
 <template>
   <v-navigation-drawer
-    :model-value="drawer"
-    fixed
-    style="height: 100vh;"
     :elevation="20"
-    hide-overlay
+    :model-value="drawer"
     location="right"
+    style="height: 100vh;"
+    fixed
+    hide-overlay
     @input="$emit('input', $event)"
   >
     <v-list
-      nav
-      dense
       :items="items"
+      dense
       items-props
+      nav
     >
-        <v-list-item
-          v-for="item in items"
-          :key="item.name"
-          :to="item.name === 'Home'? '/' : item.name"
-          :exact="item.name === 'Home'"
-          selected-class="text-white"
-          :ripple="false"
-          :value="item.name"
-        >
-          <template #append>
-             <v-icon :icon="item.icon" />
-          </template>
-          <v-list-item-title > {{ item.name }} </v-list-item-title>
-        </v-list-item>
+      <v-list-item
+        v-for="item in items"
+        :key="item.name"
+        :exact="item.name === 'Home'"
+        :ripple="false"
+        :to="item.name === 'Home'? '/' : item.name"
+        :value="item.name"
+        selected-class="text-white"
+      >
+        <template #append>
+          <v-icon :icon="item.icon" />
+        </template>
+        <v-list-item-title> {{ item.name }} </v-list-item-title>
+      </v-list-item>
     </v-list>
     <template #append>
       <v-btn
-        variant="text"
-        :ripple="false"
         :href="`tel:${appData.contact.phone.value}`"
+        :ripple="false"
+        variant="text"
       >
         <v-icon
-          class="mr-2"
           :icon="appData.contact.phone.icon"
+          class="mr-2"
         />
         <span
           v-text="appData.contact.phone.value"
@@ -64,15 +66,15 @@
       </v-btn>
 
       <v-btn
+        :href="`mailto:${appData.contact.email.value}`"
+        :ripple="false"
+        height="60px"
         variant="text"
         tile
-        height="60px"
-        :ripple="false"
-        :href="`mailto:${appData.contact.email.value}`"
       >
         <v-icon
-          class="mr-2"
           :icon="appData.contact.email.icon"
+          class="mr-2"
         />
         <span
           v-text="appData.contact.email.value"

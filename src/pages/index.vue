@@ -1,17 +1,17 @@
 <script setup lang="ts">
-  import Hero from '@/views/Hero.vue';
-  import WelcomeFeatures from '@/views/WelcomeFeatures.vue';
-  import FlexibleCallout from '@/views/FlexibleCallout.vue';
-  import OurTeam from '@/views/OurTeam.vue';
-  import StandoutCallout from '@/views/StandoutCallout.vue';
-  import Info from '@/views/Info.vue';
+  import Hero from '@/views/Hero.vue'
+  import WelcomeFeatures from '@/views/WelcomeFeatures.vue'
+  import FlexibleCallout from '@/views/FlexibleCallout.vue'
+  import OurTeam from '@/views/OurTeam.vue'
+  import StandoutCallout from '@/views/StandoutCallout.vue'
+  import Info from '@/views/Info.vue'
 
   interface Props {
     id?: string
   }
 
   withDefaults(defineProps<Props>(), {
-    id: 'home'
+    id: 'home',
   })
 
 </script>

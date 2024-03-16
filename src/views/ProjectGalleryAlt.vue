@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import { useDisplay } from 'vuetify';
-  import { useAppData } from '@/stores/mockup';
+  import { useDisplay } from 'vuetify'
+  import { useAppData } from '@/stores/mockup'
 
-  const appData = useAppData();
-  const { name } = useDisplay();
+  const appData = useAppData()
+  const { name } = useDisplay()
   const shuffledProjects = computed(() => {
     const projs = appData.projects.slice()
 
@@ -14,7 +14,7 @@
       md: 3,
       lg: 4,
       xl: 4,
-      xxl: 5
+      xxl: 5,
     }
     return projs.slice(0, sizeMap[name.value])
   })
@@ -26,16 +26,16 @@
     space="0"
   >
     <v-row
-      justify="center"
       align="center"
+      justify="center"
       no-gutters
     >
       <template v-for="(project, _i) in shuffledProjects" :key="_i">
         <v-col
           cols="12"
-          sm="6"
-          md="4"
           lg="3"
+          md="4"
+          sm="6"
         >
           <Project v-bind="project" />
         </v-col>

@@ -21,36 +21,36 @@
     outlined
   >
     <v-img
-      height="350"
       :src="post.src"
+      height="350"
     />
 
     <v-card-title>
       <Title :title="post.title" />
     </v-card-title>
     <v-card-text>
-      <div class="caption">
+      <div class="text-caption">
         <v-icon
-          small
           icon="mdi-file-document-edit-outline"
+          small
         />
         <span
           class="ma-1"
           v-text="post.author"
         />
         <v-icon
-          small
           class="ml-2"
           icon="mdi-clock"
+          small
         />
         <span
           class="ma-1"
           v-text="post.date"
         />
         <v-icon
-          small
           class="ml-2"
           icon="mdi-comment"
+          small
         />
         <span
           class="ma-1"
@@ -59,8 +59,8 @@
         <span v-text="'Comments'" />
       </div>
       <Body
-        class="mt-4"
         :text="post.description"
+        class="mt-4"
       />
     </v-card-text>
   </v-card>

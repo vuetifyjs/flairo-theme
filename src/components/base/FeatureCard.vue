@@ -17,27 +17,27 @@
     body: '',
     rounded: false,
     tile: false,
-    avatarColor: 'primary'
+    avatarColor: 'primary',
   })
 </script>
 
 <template>
   <v-card
-    width="400"
     variant="outlined"
+    width="400"
   >
     <v-card-text>
       <v-row justify="center">
-        <v-col cols="12" class="my-1">
+        <v-col class="my-1" cols="12">
           <Avatar
-            :tile="tile"
-            :rounded="rounded"
-            :icon="icon"
-            size="70"
-            icon-size="25"
             :color="avatarColor"
-            :outlined="outlined"
+            :icon="icon"
             :outline-color="outlineColor"
+            :outlined="outlined"
+            :rounded="rounded"
+            :tile="tile"
+            icon-size="25"
+            size="70"
           />
         </v-col>
       </v-row>
@@ -60,16 +60,16 @@
           />
         </v-col>
         <v-btn
-          variant="outlined"
-          size="small"
-          color="primary"
-          class="text-white"
           :to="to"
+          class="text-white"
+          color="primary"
+          size="small"
+          variant="outlined"
         >
           Read More
           <v-icon
-            location="right"
             icon="mdi-chevron-right"
+            location="right"
           />
         </v-btn>
       </v-row>

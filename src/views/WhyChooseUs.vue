@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { useAppData } from '@/stores/mockup';
+  import { useAppData } from '@/stores/mockup'
 
-  const appData = useAppData();
+  const appData = useAppData()
   const reasons = ref<{
     title: string,
     description: string
@@ -16,18 +16,18 @@
 <template>
   <Section
     id="why-choose-us"
-    class="bg-grey-lighten-4"
+    class="bg-surface-light"
   >
     <v-row
-      no-gutters
-      class="px-12"
       align="start"
+      class="px-12"
       justify="center"
+      no-gutters
     >
       <v-col
+        class="px-3 pb-3"
         cols="12"
         md="6"
-        class="px-3 pb-3"
       >
         <Subheading
           title="Why Choose Us"
@@ -43,20 +43,20 @@
             </v-expansion-panel-title>
             <v-expansion-panel-text>
               <v-card variant="flat">
-                <v-card-text > {{ reason.description }} </v-card-text>
+                <v-card-text> {{ reason.description }} </v-card-text>
               </v-card>
             </v-expansion-panel-text>
           </v-expansion-panel>
         </v-expansion-panels>
       </v-col>
       <v-col
+        class="px-3 py-1"
         cols="12"
         md="6"
-        class="px-3 py-1"
       >
         <Subheading
-          title="Blog Posts"
           class="primary--text"
+          title="Blog Posts"
         />
         <Divider align="left" />
         <template v-for="(post, _i) in appData.blogPosts" :key="_i">

@@ -7,9 +7,9 @@
   interface Props {
     space?: number | string
   }
-  
-  const props = withDefaults(defineProps<Props>(),{
-    space: 96
+
+  const props = withDefaults(defineProps<Props>(), {
+    space: 96,
   })
 
   const styles = computed(() => {

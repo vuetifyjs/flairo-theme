@@ -8,12 +8,12 @@
     space="4"
   >
     <Heading
-      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      size="text-h5"
-      color="offblock"
-      author="Martin Flox"
       :date="new Date().toLocaleDateString()"
+      author="Martin Flox"
+      color="offblock"
       comment-count=""
+      size="text-h5"
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     />
   </Section>
 </template>

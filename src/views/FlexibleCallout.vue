@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { useAppData } from '@/stores/mockup';
+  import { useAppData } from '@/stores/mockup'
 
-  const appData = useAppData();
+  const appData = useAppData()
 </script>
 
 <template>
@@ -11,20 +11,20 @@
   >
     <div class="justify-center align-center text-center">
       <Heading
+        align="center"
         class="font-weight-bold"
         title="SUPER FLEXIBLE"
-        align="center"
       />
       <Body
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mauris non venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
         align="center"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mauris non venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
       />
       <Btn
-        rounded
         color="offblack"
-        dark
         href="https://store.vuetifyjs.com/products/flairo-theme-pro"
         target="_blank"
+        dark
+        rounded
       >
         <span
           class="font-weight-medium text-none"

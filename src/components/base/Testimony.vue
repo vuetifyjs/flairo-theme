@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import { VImg, VSheet } from 'vuetify/lib/components/index.mjs';
-  
+  import { VImg, VSheet } from 'vuetify/lib/components/index.mjs'
+
   interface Props {
     src: string
     backgroundSrc?: string
@@ -52,7 +52,7 @@
           "{{ props.customer.review }}"
         </p>
 
-        <h4 class="text-center headline text-uppercase">
+        <h4 class="text-center text-subtitle-1 text-uppercase">
           - {{ props.customer.name }}
         </h4>
 

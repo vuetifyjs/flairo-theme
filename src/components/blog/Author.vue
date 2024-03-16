@@ -1,4 +1,4 @@
-<script setup lang="ts">  interface Props {
+<script setup lang="ts"> interface Props {
     name: string
     bio: string
     src: string
@@ -9,9 +9,9 @@
 
 <template>
   <v-card
-    color="grey lighten-4 pa-2"
-    flat
     class="ma-4"
+    color="surface-light pa-2"
+    flat
   >
     <v-card-text>
       <v-row>
@@ -26,14 +26,14 @@
         </v-avatar>
         <v-col>
           <Title
+            :title="name"
+            size="text-h6"
             space="2"
             weight="bold"
-            size="text-h5"
-            :title="name"
           />
           <Body
-            space="0"
             :text="bio"
+            space="0"
           />
         </v-col>
       </v-row>

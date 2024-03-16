@@ -3,7 +3,7 @@
   import BackgroundImg from '@/assets/background.png'
   import CampingImg from '@/assets/camping.svg'
 
-  const appData = useAppData();
+  const appData = useAppData()
 </script>
 
 <template>
@@ -12,8 +12,8 @@
     space="0"
   >
     <v-img
-      :src="BackgroundImg"
       :min-height="695"
+      :src="BackgroundImg"
       cover
     >
       <v-theme-provider>
@@ -25,40 +25,40 @@
           >
             <v-row align="center">
               <v-col
+                class="text-white"
                 cols="12"
                 md="6"
-                class="text-white"
               >
                 <Heading
-                  class="text-uppercase font-weight-bold"
                   :title="`Why ${appData.title}?`"
+                  class="text-uppercase font-weight-bold"
                   color="white"
                 />
                 <Subheading
-                  title="Awesome, Clean & Unique"
                   color="white"
+                  title="Awesome, Clean & Unique"
                 />
                 <Body
                   text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mauris non venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
                 />
                 <Btn
-                  rounded
-                  height="50px"
-                  color="white"
                   class="text-primary font-weight-bold text-none mr-4 mb-1"
+                  color="white"
+                  height="50px"
                   href="https://store.vuetifyjs.com/products/flairo-theme-pro"
                   target="_blank"
+                  rounded
                 >
                   <span v-text="`Purchase ${appData.title}`" />
                 </Btn>
                 <Btn
-                  variant="outlined"
-                  rounded
-                  height="50px"
-                  color="white"
                   class="font-weight-bold text-none mr-4 mb-1"
+                  color="white"
+                  height="50px"
                   href="https://store.vuetifyjs.com/products/flairo-theme-pro"
                   target="_blank"
+                  variant="outlined"
+                  rounded
                 >
                   <span v-text="`Purchase ${appData.title}`" />
                 </Btn>
@@ -69,8 +69,8 @@
               >
                 <v-img
                   :src="CampingImg"
-                  min-height="365px"
                   max-width="650px"
+                  min-height="365px"
                 />
               </v-col>
             </v-row>

@@ -18,16 +18,16 @@
     class="bg-primary"
   >
     <v-row
-      justify="center"
       align="center"
       class="px-10"
+      justify="center"
     >
       <template v-for="(stat, _i) in stats" :key="_i">
         <v-col
-          cols="12"
-          sm="6"
-          md="3"
           class="text-center"
+          cols="12"
+          md="3"
+          sm="6"
         >
           <Stat
             class="pa-3"

@@ -20,39 +20,41 @@
   <div>
     <v-hover v-slot="{ isHovering, props }">
       <v-card
+        class="pa-3"
         max-height="400"
+        variant="text"
         width="auto"
-        class="pa-2"
-        variant="outlined"
+        border
+        tile
         v-bind="props"
       >
         <v-img
-          min-height="300"
-          height="100%"
           :src="src"
+          height="100%"
+          min-height="300"
           cover
         >
           <v-overlay
             :model-value="isHovering"
-            class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center text-offblock"
-            style="opacity: .8;"
-            scrim="grey-lighten-5"
+            class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center"
+            opacity="0.8"
+            scrim="surface-light"
             contained
           >
             <v-btn
               v-for="site in socialLinks"
               :key="site.link"
               :href="site.link"
-              target="_blank"
               class="mx-2"
               size="50"
+              target="_blank"
               variant="outlined"
               rounded
             >
               <v-icon
-                size='40'
-                class="mx-0"
                 :icon="site.icon"
+                class="mx-0"
+                size="40"
               />
             </v-btn>
           </v-overlay>
@@ -66,7 +68,7 @@
             v-text="name"
           />
           <div
-            class="mb-2 text-left"
+            class="text-left"
             v-text="title"
           />
         </v-card-text>

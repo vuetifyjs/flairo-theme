@@ -1,15 +1,17 @@
 <script setup lang="ts">
-  import { useAppData } from '@/stores/mockup';
+  import { useAppData } from '@/stores/mockup'
 
   interface Props {
     drawer? : boolean
   }
-  
+
   withDefaults(defineProps<Props>(), {
-    drawer: false
+    drawer: false,
   })
 
-  const appData = useAppData();
+  defineEmits(['input'])
+
+  const appData = useAppData()
   const search = ref('')
   const categories = ref<{
     name: string,
@@ -19,19 +21,19 @@
     { name: 'Nighttime', count: 5 },
     { name: 'Campfire', count: 3 },
     { name: 'Mountain', count: 8 },
-    { name: 'Miscellaneous', count: 5 }
+    { name: 'Miscellaneous', count: 5 },
   ])
 </script>
 
 <template>
   <v-navigation-drawer
-    :model-value="drawer"
-    fixed
-    class="py-5 pl-3"
-    style="height: 100vh; width: 400px;"
     :elevation="20"
-    hide-overlay
+    :model-value="drawer"
+    class="py-5 pl-3"
     location="right"
+    style="height: 100vh; width: 400px;"
+    fixed
+    hide-overlay
     @input="$emit('input', $event)"
   >
     <template #prepend>
@@ -42,17 +44,16 @@
       >
         <v-icon>mdi-close</v-icon>
       </v-btn>
-      <Title title="Search" size="body-2" />
+      <Title size="body-2" title="Search" />
       <Divider align="left" />
-      <v-row justify="center" align="center">
+      <v-row align="center" justify="center">
         <TextField
           v-model="search"
+          class="pr-4 pb-5 pl-3"
           placeholder="Search"
           variant="outlined"
-          class="pr-4 pb-5 pl-3"
           hide-details
-        >
-        </TextField>
+        />
       </v-row>
     </template>
     <!-- Categories -->
@@ -63,8 +64,8 @@
       />
       <Divider align="left" />
       <v-list
-        dense
         class="pt-0"
+        dense
       >
         <v-list-item
           v-for="category in categories"
@@ -77,8 +78,8 @@
     </v-card>
     <!-- Popular Posts -->
     <v-card
-      flat
       class="pr-3"
+      flat
     >
       <Title
         class="mt-4"
@@ -94,8 +95,8 @@
     </v-card>
     <!-- Photos -->
     <v-card
-      flat
       class="pr-3"
+      flat
     >
       <Title
         class="mt-4"
@@ -103,20 +104,20 @@
       />
       <Divider align="left" />
       <v-row
-        justify="center"
         align="center"
+        justify="center"
         no-gutters
       >
         <template v-for="ig in appData.instagramPosts" :key="ig.id">
           <v-col
-            cols="4"
             class="pb-5"
+            cols="4"
           >
             <v-img
               :src="ig.src"
-              min-height="100"
-              max-width="100"
               height="100"
+              max-width="100"
+              min-height="100"
               fill
             />
           </v-col>
@@ -125,8 +126,8 @@
     </v-card>
     <!-- Tweets -->
     <v-card
-      flat
       class="pr-3"
+      flat
     >
       <Title
         class="mt-4"
@@ -141,8 +142,8 @@
     </v-card>
     <!-- Tags -->
     <v-card
-      flat
       class="pr-3"
+      flat
     >
       <Title
         class="mt-4"

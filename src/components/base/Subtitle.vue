@@ -16,7 +16,7 @@
     mobileSize: 'body-1',
     space: 0,
     tag: 'div',
-    weight: 'regular'
+    weight: 'regular',
   })
 
   // const classes = computed(() => {

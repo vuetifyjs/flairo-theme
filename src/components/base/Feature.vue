@@ -12,7 +12,7 @@
   withDefaults(defineProps<Props>(), {
     tile: false,
     text: '',
-    avatarColor: 'primary'
+    avatarColor: 'primary',
   })
 </script>
 
@@ -24,20 +24,20 @@
     <v-card-text class="mt-2">
       <v-row justify="center">
         <Avatar
-          :icon="icon"
-          :tile="tile"
           :color="avatarColor"
+          :icon="icon"
+          :outline-color="outlineColor"
           :outlined="outlined"
-          :outlineColor="outlineColor"
+          :tile="tile"
         />
       </v-row>
       <div
         class="text-center flex-column"
       >
         <Subheading
-          class="title text-primary mt-6"
-          align="center"
           :title="title"
+          align="center"
+          class="text-h6 text-primary mt-6"
         />
         <Body
           v-if="text"
@@ -48,4 +48,3 @@
     </v-card-text>
   </v-card>
 </template>
-

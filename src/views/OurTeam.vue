@@ -51,29 +51,29 @@
   >
     <div class="justify-center align-center">
       <Heading
+        align="center"
         class="font-weight-bold"
         title="Our Team"
-        align="center"
       />
       <Divider
-        color="primary"
         align="center"
+        color="primary"
       />
       <Body
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mauris non venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
         align="center"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mauris non venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
       />
     </div>
     <v-row
-      justify="center"
       align="center"
       class="px-10"
+      justify="center"
     >
       <template v-for="(employee, _i) in teamMembers" :key="_i">
         <v-col
           cols="12"
-          sm="6"
           md="3"
+          sm="6"
         >
           <TeamMember v-bind="employee" />
         </v-col>

@@ -1,99 +1,96 @@
 <script setup lang="ts">
-  import { useDisplay } from 'vuetify';
-  import { useAppData } from '@/stores/mockup';
+  import { useDisplay } from 'vuetify'
+  import { useAppData } from '@/stores/mockup'
 
-  const { mdAndUp } = useDisplay();
-  const appData = useAppData();
+  const { mdAndUp } = useDisplay()
+  const appData = useAppData()
 </script>
 
 <template>
-  <Section class="bg-offblack" >
+  <Section class="bg-offblack">
     <v-row
-      no-gutters
-      class="px-12"
       align="start"
+      class="px-12"
       justify="center"
+      no-gutters
     >
       <v-col
+        class="px-3"
         cols="12"
         md="3"
-        class="px-3"
       >
         <Subheading :title="`About ${appData.title}`" color="white" />
         <Divider
-          color="white"
           align="left"
+          color="white"
         />
         <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget metus varius, malesuada nulla sed, ultrices est. Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo." />
         <Body text="Proin sed nisl tortor. Sed ex mi, volutpat et lobortis sit amet, fringilla at leo." />
       </v-col>
       <v-col
         v-if="mdAndUp"
-        cols="3"
         class="px-3"
+        cols="3"
       >
-        <Subheading title="Recent News" color="white" />
+        <Subheading color="white" title="Recent News" />
         <Divider
-          color="white"
           align="left"
+          color="white"
         />
         <template v-for="(news, _i) in appData.recentNews" :key="`news-text-${_i}`">
           <Body
-            tag="div"
-            space="0"
-            class="py-3"
             :text="news"
+            class="py-3"
+            space="0"
+            tag="div"
           />
           <v-divider />
         </template>
       </v-col>
       <v-col
         v-if="mdAndUp"
-        cols="3"
         class="px-3"
+        cols="3"
       >
-        <Subheading title="Recent Posts" color="white" />
+        <Subheading color="white" title="Recent Posts" />
         <Divider
-          color="white"
           align="left"
+          color="white"
         />
         <template v-for="(post, i) in appData.recentPosts" :key="`post-row-${i}`">
           <div class="d-flex">
             <div>
               <Avatar
-              v-if="mdAndUp"
-              :key="`post-date-${i}`"
-              color="primary"
-              outlined
-              size="60"
-              class="ma-2"
-              :text="post.date"
-            />
+                v-if="mdAndUp"
+                :key="`post-date-${i}`"
+                :text="post.date"
+                class="ma-2"
+                color="primary"
+                size="60"
+                outlined
+              />
             </div>
-            
+
             <Body
               :key="`post-text-${i}`"
-              tag="span"
-              space="0"
-              class="py-3"
               :text="post.text"
+              class="py-3"
+              space="0"
+              tag="span"
             />
           </div>
-          <v-divider
-            color="grey"
-            max-width="100%"
-          />
+          <v-divider max-width="100%" />
         </template>
       </v-col>
       <v-col
+        class="px-3"
         cols="12"
         md="3"
-        class="px-3"
       >
-        <Subheading title="Contact Us" color="white" />
+        <Subheading color="white" title="Contact Us" />
         <Divider
-          color="white"
           align="left"
+          color="white"
         />
         <Subtitle
           title="Phone:"
@@ -108,8 +105,8 @@
           weight="bold"
         />
         <Body
-          space="2"
           :text="`email@${appData.title.toLowerCase()}.com`"
+          space="2"
         />
         <Subtitle
           title="Twitter:"
@@ -119,22 +116,22 @@
           space="2"
           text="@twitter"
         />
-        <Subheading title="Follow Us" color="white" />
+        <Subheading color="white" title="Follow Us" />
         <Divider
-          color="white"
           align="left"
+          color="white"
         />
         <Btn
           v-for="media in appData.socialLinks"
           :key="media.link"
+          :color="media.color"
           :href="media.link"
-          target="_blank"
+          :icon="media.icon"
           class="ma-1"
           min-width="40px"
-          width="40px"
+          target="_blank"
           variant="flat"
-          :color="media.color"
-          :icon="media.icon"
+          width="40px"
         />
       </v-col>
     </v-row>

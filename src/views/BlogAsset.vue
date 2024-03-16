@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import FedericoResPiniImg from '@/assets/federico-respini-sYffw0LNr7s-unsplash.jpg';
+  import FedericoResPiniImg from '@/assets/federico-respini-sYffw0LNr7s-unsplash.jpg'
 </script>
 
 <template>
@@ -10,8 +10,8 @@
   >
     <v-img
       :src="FedericoResPiniImg"
-      cover
       min-height="400px"
+      cover
     />
   </Section>
 </template>

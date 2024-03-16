@@ -5,7 +5,7 @@
     date: string
     commentCount: number | string
   }
-  
+
   defineProps<Props>()
 </script>
 
@@ -14,28 +14,28 @@
     <Subheading
       :title="title"
     />
-    <div class="caption">
+    <div class="text-caption">
       <v-icon
-        small
         icon="mdi-file-document-edit-outline"
+        small
       />
       <span
         class="ma-1"
         v-text="`by ${author}`"
       />
       <v-icon
-        small
         class="ml-2"
         icon="mdi-clock"
+        small
       />
       <span
         class="ma-1"
         v-text="date"
       />
       <v-icon
-        small
         class="ml-2"
         icon="mdi-comment"
+        small
       />
       <span
         class="ma-1"

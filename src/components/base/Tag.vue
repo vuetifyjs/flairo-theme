@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { useTheme } from 'vuetify'
 
-  const theme = useTheme();
+  const theme = useTheme()
 
   interface Props {
     text: string

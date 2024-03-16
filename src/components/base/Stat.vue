@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { useDisplay } from 'vuetify';
+  import { useDisplay } from 'vuetify'
 
-  const { mobile } = useDisplay();
+  const { mobile } = useDisplay()
 
   interface Props {
     statNumber: number | string
@@ -12,7 +12,7 @@
 
   const props = withDefaults(defineProps<Props>(), {
     color: 'primary',
-    outlined: false
+    outlined: false,
   })
 
   const styles = computed(() => {
@@ -24,23 +24,23 @@
 
 <template>
   <v-avatar
-    size="270"
     :style="styles"
+    size="270"
   >
     <div
       :class="`text-${color}`"
     >
       <Heading
-        space="2"
-        align="center"
         :color="props.color"
-      > {{ props.statNumber }} </Heading>
-      <Divider />
-      <Body
-        class="text-uppercase headline"
         align="center"
         space="2"
+      > {{ props.statNumber }} </Heading>
+      <Divider class="border-opacity-50" color="surface-variant" />
+      <Body
         :text="props.text"
+        align="center"
+        class="text-uppercase text-subtitle-1 text-medium-emphasis"
+        space="2"
       />
     </div>
   </v-avatar>

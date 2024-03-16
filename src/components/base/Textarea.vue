@@ -3,8 +3,8 @@
 
 <template>
   <v-textarea
-    outlined
     dense
+    outlined
     single-line
     v-bind="{
       rows: 6,

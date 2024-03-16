@@ -1,4 +1,4 @@
-<script setup lang="ts">  import TestimonyAvatar from '@/assets/testimony/testimony-1.jpg'
+<script setup lang="ts"> import TestimonyAvatar from '@/assets/testimony/testimony-1.jpg'
 </script>
 
 <template>
@@ -12,9 +12,9 @@
       max-width="500"
     />
     <Author
-      name="Martin Flox"
-      bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       :src="TestimonyAvatar"
+      bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      name="Martin Flox"
     />
   </Section>
 </template>

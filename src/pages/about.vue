@@ -1,15 +1,15 @@
 <script setup lang="ts">
-  import Story from '@/views/Story.vue';
-  import StoryAlt from '@/views/StoryAlt.vue';
-  import OurTeam from '@/views/OurTeam.vue';
-  import Stats from '@/views/Stats.vue';
-  import Info from '@/views/Info.vue';
+  import Story from '@/views/Story.vue'
+  import StoryAlt from '@/views/StoryAlt.vue'
+  import OurTeam from '@/views/OurTeam.vue'
+  import Stats from '@/views/Stats.vue'
+  import Info from '@/views/Info.vue'
   interface Props {
     id?: string
   }
 
   withDefaults(defineProps<Props>(), {
-    id: 'about'
+    id: 'about',
   })
 </script>
 

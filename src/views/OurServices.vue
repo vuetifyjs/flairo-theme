@@ -58,25 +58,25 @@
   >
     <div class="justify-center align-center">
       <Heading
+        align="center"
         class="font-weight-bold"
         title="Our Services"
-        align="center"
       />
       <Divider
-        color="primary"
         align="center"
+        color="primary"
       />
     </div>
     <v-row
-      justify="center"
       align="stretch"
       class="px-3"
+      justify="center"
     >
       <template v-for="(feature, _i) in features" :key="_i">
         <v-col
           cols="12"
-          md="6"
           lg="3"
+          md="6"
         >
           <FeatureAlt
             class="pa-1"

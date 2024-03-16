@@ -1,4 +1,4 @@
-<script setup lang="ts">  import Heading from './Heading.vue'
+<script setup lang="ts"> import Heading from './Heading.vue'
 
   interface Props {
     size?: string
@@ -15,7 +15,7 @@
   const props = withDefaults(defineProps<Props>(), {
     size: 'text-h4',
     mobileSize: 'title',
-    weight: 'bold'
+    weight: 'bold',
   })
 
 </script>

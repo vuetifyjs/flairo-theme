@@ -3,16 +3,16 @@
 
 <template>
   <v-text-field
-    outlined
     dense
+    outlined
     v-bind="$attrs"
   >
-    <template v-slot:append-outer>
-<slot
-      
-      name="append-outer"
-    />
-</template>
+    <template #append-outer>
+      <slot
+
+        name="append-outer"
+      />
+    </template>
   </v-text-field>
 </template>
 

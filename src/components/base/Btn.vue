@@ -5,8 +5,8 @@
   }
 
   withDefaults(defineProps<Props>(), {
-    color: 'primary'
-  });
+    color: 'primary',
+  })
 
 </script>
 

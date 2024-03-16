@@ -13,47 +13,47 @@
     },
     clamp?: number | string
   }
-  
+
   withDefaults(defineProps<Props>(), {
     clamp: 0,
-    text: ""
+    text: '',
   })
 </script>
 
 <template>
   <v-row>
     <Avatar
-        :key="`post-date`"
-        color="grey"
-        tile
-        size="100"
-        class="ma-2"
-      />
+      :key="`post-date`"
+      class="ma-2"
+      color="surface-variant"
+      size="100"
+      tile
+    />
     <v-col class="pl-2">
       <Title
         :title="post.title"
-        size="title"
         class="text-primary"
+        size="title"
         space="0"
       />
       <Body
         :key="`post-text`"
-        space="0"
         :clamp="clamp"
         :text="post.text"
+        space="0"
       />
       <div>
         <RouterLink
           v-if="post.to"
           :to="post.to"
-          style="text-decoration: none;"
           class="text-primary"
+          style="text-decoration: none;"
         > Read More </RouterLink>
         <template v-if="post.date">
           <v-icon
             class="ml-4 mr-2"
-            small
             icon="mdi-clock-outline"
+            small
           />
           <span v-text="post.date" />
         </template>

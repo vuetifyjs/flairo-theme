@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { useAppData } from '@/stores/mockup';
+  import { useAppData } from '@/stores/mockup'
 
-  const appData = useAppData();
+  const appData = useAppData()
 </script>
 
 <template>
@@ -11,18 +11,18 @@
   >
     <div class="justify-center align-center text-center">
       <Heading
-        class="font-weight-bold"
-        title="30+ reuseable components!"
         align="center"
+        class="font-weight-bold"
         space="0"
+        title="30+ reuseable components!"
       />
       <Btn
-        rounded
         class="mt-10 mb-2 elevation-0"
         color="white text-primary"
-        variant="flat"
         href="https://store.vuetifyjs.com/products/flairo-theme-pro"
         target="_blank"
+        variant="flat"
+        rounded
       >
         <span
           class="font-weight-black text-none"

@@ -1,4 +1,4 @@
-<script setup lang="ts">  
+<script setup lang="ts">
 </script>
 
 <template>
@@ -7,7 +7,6 @@
     space="0"
   >
     <iframe
-      allowfullscreen
       aria-hidden="false"
       frameborder="0"
       height="500"
@@ -15,6 +14,7 @@
       style="border:0; display: block;"
       tabindex="0"
       width="100%"
+      allowfullscreen
     />
   </Section>
 </template>
