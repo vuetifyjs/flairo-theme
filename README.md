@@ -1,81 +1,238 @@
-# Vuetify (Default)
+# [Flairo Theme PRO](https://store.vuetifyjs.com/products/flairo-theme-pro)
 
-This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
+A premium collection of components and layouts for building applications with Vuetify 3 and Vite, optimized for performance and ease of use.
 
-## ❗️ Important Links
+**Flairo Theme PRO** is crafted with [Vite](https://vitejs.dev/guide/), [Vuetify 3](https://vuetifyjs.com/), and [Vuejs 3](https://vuejs.org/). It's designed to accelerate your Vuetify 3 Vite application development. Leveraging the theme is straightforward but requires fundamental knowledge of Javascript, [Vuejs](https://vuejs.org), and [Vite](https://vitejs.dev/guide/).
 
-- 📄 [Docs](https://vuetifyjs.com/)
-- 🚨 [Issues](https://issues.vuetifyjs.com/)
-- 🏬 [Store](https://store.vuetifyjs.com/)
-- 🎮 [Playground](https://play.vuetifyjs.com/)
-- 💬 [Discord](https://community.vuetifyjs.com)
+## Getting Started
 
-## 💿 Install
+- Install Node.js from the official [Node.js page](https://nodejs.org/en/)
+- Install Yarn from the official [Yarn installation page](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+- Unzip the `flairo-theme-pro.zip` file downloaded from the Vuetify store
+- Create a folder named `flairo-theme-pro` and unzip the `flairo-theme-pro.zip` file
+- Open your terminal and navigate to the `flairo-theme-pro` directory
+- Run `yarn install` to install the project's dependencies
+- Run `yarn dev` to start a local development server
 
-Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
+In addition to the development server, you can:
 
-| Package Manager                                                | Command        |
-|---------------------------------------------------------------|----------------|
-| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
-| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
-| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
-| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
+- Run `yarn run build` to prepare your app for production
+- Run `yarn run serve` to test your production build locally
+- Run `yarn run lint` for linting
 
-After completing the installation, your environment is ready for Vuetify development.
+## Vuetify
 
-## ✨ Features
+Vuetify is an Open Source UI Library that is developed exactly according to Material Design spec. Every component is handcrafted to bring you the best possible UI tools to your next great app. The development doesn't stop at the core components outlined in Google's spec. Through the support of community members and sponsors, additional components will be designed and made available for everyone to enjoy.
 
-- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
-- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
-- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- 💻 **Enhanced Development Experience**: Benefit from TypeScript's static type checking and the ESLint plugin suite for Vue, ensuring code quality and consistency. [TypeScript](https://www.typescriptlang.org/) | [ESLint Plugin Vue](https://eslint.vuejs.org/)
-- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
-- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
-- 🛠️ **Strongly-Typed Vue**: Use vue-tsc for type-checking your Vue components, and enjoy a robust development experience. [vue-tsc](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc)
+The documentation for **Vuetify** is hosted [here](https://vuetifyjs.com/).
 
-These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
+***Not all components that are available in this project are part of the theme and may be a default Vuetify component***
 
-## 💡 Usage
+## Vite
 
-This section covers how to start the development server and build your project for production.
+Vite is a build tool that significantly improves the front-end development experience. You can use Vite to set up a development environment for frameworks like Vue and React, and even for a vanilla JavaScript app with a dev server and hot reloading in just three commands. It also easily integrates with [TypeScript](https://vitejs.dev/guide/features.html#typescript).
 
-### Starting the Development Server
+## Table of Contents
 
-To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
+- [Demo](#demo)
+- [Quick Start](#quick-start)
+- [File Structure](#file-structure)
+- [Browser Support](#browser-support)
+- [Resources](#resources)
+- [Reporting Issues](#reporting-issues)
+- [Technical Support or Questions](#technical-support-or-questions)
+- [Licensing](#licensing)
+- [Useful Links](#useful-links)
 
-```bash
-yarn dev
+## Demo
+
+- [Demo page](https://flairo-theme-pro.vuetifyjs.com)
+
+## Quick Start
+
+Getting started with the **Flairo Theme PRO** is straightforward. Follow these steps to set up your development environment and begin creating your application with Vuetify 3 and Vite.
+
+1. Ensure you have Node.js and Yarn installed on your system. If not, you can download them from the official [Node.js website](https://nodejs.org/en/) and [Yarn installation page](https://classic.yarnpkg.com/en/docs/install/#windows-stable).
+2. Download the `flairo-theme-pro.zip` file from the Vuetify store and unzip it into a directory of your choice.
+3. Open a terminal or command prompt and navigate to the directory where you unzipped the Flairo Theme PRO.
+4. Run `yarn install` to install all dependencies.
+5. Once the installation is complete, start the development server by running `yarn dev`.
+6. Your default web browser should open automatically, displaying the Flairo Theme PRO template. If it doesn't, open your browser and visit `http://localhost:3000`.
+
+You are now ready to start developing with the Flairo Theme PRO! Explore the components and layouts included to build your application.
+
+## File Structure
+
+Within the download you'll find the following directories and files:
+
+<details>
+
+```txt
+flairo-theme
+flairo-theme
+├── .browserslistrc
+├── .editorconfig
+├── .env
+├── .eslintrc-auto-import.json
+├── .eslintrc.js
+├── .gitignore
+├── README.md
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── assets
+│   ├── auto-imports.d.ts
+│   ├── components
+│   │   ├── README.md
+│   │   ├── base
+│   │   │   ├── Avatar.vue
+│   │   │   ├── Body.vue
+│   │   │   ├── Btn.vue
+│   │   │   ├── Divider.vue
+│   │   │   ├── Feature.vue
+│   │   │   ├── FeatureAlt.vue
+│   │   │   ├── FeatureCard.vue
+│   │   │   ├── Heading.vue
+│   │   │   ├── PricingPlan.vue
+│   │   │   ├── Project.vue
+│   │   │   ├── Section.vue
+│   │   │   ├── SectionHeading.vue
+│   │   │   ├── SkillMeter.vue
+│   │   │   ├── Stat.vue
+│   │   │   ├── Subheading.vue
+│   │   │   ├── Subtitle.vue
+│   │   │   ├── Tag.vue
+│   │   │   ├── TeamMember.vue
+│   │   │   ├── Testimony.vue
+│   │   │   ├── TextField.vue
+│   │   │   ├── Textarea.vue
+│   │   │   └── Title.vue
+│   │   └── blog
+│   │       ├── Author.vue
+│   │       ├── Blockquote.vue
+│   │       ├── Card.vue
+│   │       ├── Heading.vue
+│   │       ├── Post.vue
+│   │       └── Tweet.vue
+│   ├── components.d.ts
+│   ├── layouts
+│   │   ├── README.md
+│   │   ├── components
+│   │   │   ├── AppBar.vue
+│   │   │   ├── BaseSidebar.vue
+│   │   │   ├── BlogSidebar.vue
+│   │   │   ├── SystemBar.vue
+│   │   │   └── View.vue
+│   │   └── default.vue
+│   ├── main.ts
+│   ├── pages
+│   │   ├── README.md
+│   │   ├── [...error].vue
+│   │   ├── about.vue
+│   │   ├── blog.vue
+│   │   ├── contact.vue
+│   │   ├── index.vue
+│   │   ├── portfolio.vue
+│   │   ├── project
+│   │   │   └── [id].vue
+│   │   ├── services.vue
+│   │   └── sink.vue
+│   ├── plugins
+│   │   ├── README.md
+│   │   ├── index.ts
+│   │   └── vuetify.ts
+│   ├── router
+│   │   └── index.ts
+│   ├── stores
+│   │   ├── README.md
+│   │   ├── app.ts
+│   │   ├── index.ts
+│   │   └── mockup.ts
+│   ├── styles
+│   │   ├── README.md
+│   │   └── settings.scss
+│   ├── typed-router.d.ts
+│   ├── views
+│   │   ├── BlogAsset.vue
+│   │   ├── BlogAuthor.vue
+│   │   ├── BlogExcerpt.vue
+│   │   ├── BlogExcerptLeftImg.vue
+│   │   ├── BlogExcerptRightImg.vue
+│   │   ├── BlogExcerptShort.vue
+│   │   ├── BlogHeader.vue
+│   │   ├── BlogQuote.vue
+│   │   ├── Construction.vue
+│   │   ├── FlexibleCallout.vue
+│   │   ├── GetInTouch.vue
+│   │   ├── Hero.vue
+│   │   ├── Info.vue
+│   │   ├── Map.vue
+│   │   ├── NotFound.vue
+│   │   ├── OurServices.vue
+│   │   ├── OurTeam.vue
+│   │   ├── ProjectDetail.vue
+│   │   ├── ProjectGallery.vue
+│   │   ├── ProjectGalleryAlt.vue
+│   │   ├── RelatedBlogPosts.vue
+│   │   ├── StandoutCallout.vue
+│   │   ├── Stats.vue
+│   │   ├── Story.vue
+│   │   ├── StoryAlt.vue
+│   │   ├── WelcomeFeatures.vue
+│   │   └── WhyChooseUs.vue
+│   └── vite-env.d.ts
+├── tsconfig.json
+├── tsconfig.node.json
+├── vercel.json
+└── vite.config.mts
 ```
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+</details>
 
-> Add NODE_OPTIONS='--no-warnings' to suppress the JSON import warnings that happen as part of the Vuetify import mapping. If you are on Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) or higher, you can change this to NODE_OPTIONS='--disable-warning=5401'. If you don't mind the warning, you can remove this from your package.json dev script.
+## Browser Support
 
-### Building for Production
+| Browser | Status |
+| - | - |
+| Chromium (Chrome, Edge) | ✅ Supported * |
+| Firefox | ✅ Supported * |
+| Safari 15.4+ | ✅ Supported |
+| Safari 13. | ❗ Requires polyfill |
+| Edge <79 | ⛔ Not supported |
+| Internet Explorer | ⛔ Not supported |
 
-To build your project for production, use:
+## Resources
 
-```bash
-yarn build
-```
+- [Live Preview](https://flairo-theme-pro.vuetifyjs.com/)
+- Product Page: [Product](https://store.vuetifyjs.com/products/flairo-theme-pro)
+- Vuetify Documentation is [Here](https://vuetifyjs.com/)
+- Contact: [Contact](mailto:support@vuetifyjs.com)
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+## Technical Support or Questions
 
-Once the build process is completed, your application will be ready for deployment in a production environment.
+For any technical issues or questions about **Flairo Theme PRO**, support is available through:
 
-## 💪 Support Vuetify Development
+- **Email Support**: Direct support is available via email at [support@vuetifyjs.com](mailto:support@vuetifyjs.com).
 
-This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
+We are dedicated to ensuring your success with Flairo Theme PRO. Please don't hesitate to reach out for assistance or feedback.
 
-- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
-- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
-- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
-- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
-- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
-- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
-- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
+## Licensing
 
-## 📑 License
-[MIT](http://opensource.org/licenses/MIT)
+- Copyright 2016-2024 Vuetify <https://vuetifyjs.com/>
+- Vuetify [License Information](https://github.com/vuetifyjs/vuetify/blob/master/LICENSE.md)
 
-Copyright (c) 2016-present Vuetify, LLC
+## Useful Links
+
+- [Vuetify Documentation](https://vuetifyjs.com/)
+- [Vuetify Store](https://store.vuetifyjs.com/)
+- [Discord](https://community.vuetifyjs.com)
+- [Twitter](https://twitter.com/vuetifyjs)
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.vuetifyjs.com/docs/images/logos/v.png" height="128">
+</p>
