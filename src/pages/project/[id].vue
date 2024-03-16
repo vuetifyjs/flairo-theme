@@ -4,7 +4,7 @@
   import Info from '@/views/Info.vue';
 
   interface Props {
-    id: string
+    id?: string
   }
 
   withDefaults(defineProps<Props>(), {

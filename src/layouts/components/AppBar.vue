@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
   import BlogSidebar from './BlogSidebar.vue';
   import BaseSidebar from './BaseSidebar.vue';
@@ -32,10 +31,6 @@
       if (props.block) attrs.height = '150px'
       return attrs
   });
-
-  onMounted(() => {
-    console.log("route.name:", route.name);
-  })
   
 </script>
 
@@ -72,7 +67,7 @@
         <v-tab
           v-for="item in items"
           :key="item.name"
-          :to="item.name === 'Home'? '/' : item.name.toLowerCase()"
+          :to="item.name === 'Home'? '/' : ('/' + item.name.toLowerCase())"
           :exact="item.name === 'Home'"
           :ripple="false"
           selected-class="text-primary"
@@ -99,7 +94,7 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
       <BlogSidebar
-        v-if="route.name === 'Blog'"
+        v-if="route.name === '/blog'"
         :drawer="drawer"
         @input="drawer = $event"
       />
