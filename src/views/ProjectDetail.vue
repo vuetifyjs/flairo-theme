@@ -5,8 +5,10 @@
   const appData = useAppData()
   const { params } = useRoute()
   const activeProject = computed(() => {
-    const id = params.id
-    return appData.projects.find(prj => +prj.id === +id)
+    if ('id' in params) {
+      const id = params.id
+      return appData.projects.find(prj => +prj.id === +id)
+    }
   })
 </script>
 

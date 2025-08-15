@@ -7,11 +7,8 @@
     outlined
     v-bind="$attrs"
   >
-    <template #append-outer>
-      <slot
-
-        name="append-outer"
-      />
+    <template>
+      <slot name="append-outer" />
     </template>
   </v-text-field>
 </template>
