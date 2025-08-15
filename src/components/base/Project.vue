@@ -30,7 +30,7 @@
         cover
       >
         <v-overlay
-          :model-value="isHovering"
+          :model-value="isHovering === null ? undefined : isHovering"
           class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center text-offblock text-center"
           opacity="0.8"
           scrim="primary"
