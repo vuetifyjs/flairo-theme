@@ -53,7 +53,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "./typed-router.d.ts",
+    "types/**/*.d.ts" ,
     "./env.d.ts",
     "./shims.d.ts",
     "./src/**/*",
