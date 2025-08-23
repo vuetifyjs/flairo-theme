@@ -7,7 +7,7 @@
     class="px-3"
     space="4"
   >
-    <Heading
+    <BlogHeading
       :date="new Date().toLocaleDateString()"
       author="Martin Flox"
       color="offblock"

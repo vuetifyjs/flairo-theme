@@ -10,6 +10,7 @@ declare module 'vue' {
     Author: typeof import('./components/blog/Author.vue')['default']
     Avatar: typeof import('./components/base/Avatar.vue')['default']
     Blockquote: typeof import('./components/blog/Blockquote.vue')['default']
+    BlogHeading: typeof import('./components/blog/BlogHeading.vue')['default']
     Body: typeof import('./components/base/Body.vue')['default']
     Btn: typeof import('./components/base/Btn.vue')['default']
     Card: typeof import('./components/blog/Card.vue')['default']
