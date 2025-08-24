@@ -53,8 +53,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "./typed-router.d.ts",
-    "./vite.config.*",
+    "types/**/*.d.ts" ,
     "./env.d.ts",
     "./shims.d.ts",
     "./src/**/*",

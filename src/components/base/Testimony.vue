@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { VImg, VSheet } from 'vuetify/lib/components/index.mjs'
+import { VImg, VSheet } from 'vuetify/components'
 
   interface Props {
     src: string

@@ -52,7 +52,7 @@
           <Title
             :size="size"
             :title="title"
-            class="primary--text"
+            class="feat-alt-title primary--text"
             space="2"
           />
           <Body
@@ -78,6 +78,10 @@
 </template>
 
 <style lang="scss" scoped>
+.feat-alt-title {
+  word-wrap: normal;
+}
+
 .link {
   text-decoration: none !important
 }
